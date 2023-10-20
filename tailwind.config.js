@@ -10,6 +10,9 @@ export default {
       fontFamily: {
         'Inter': ['Inter', 'sans-serif'],
       },
+      colors: {
+      'main-green':'#39DB4A',
+    },
     },
   },
   plugins: [],
