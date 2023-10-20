@@ -11,8 +11,8 @@ export default {
         'Inter': ['Inter', 'sans-serif'],
       },
       colors: {
-        'main-green':'#39DB4A',
-      },
+      'main-green':'#39DB4A',
+    },
     },
   },
   plugins: [],
