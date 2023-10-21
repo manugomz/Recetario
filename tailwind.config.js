@@ -12,6 +12,7 @@ export default {
       },
       colors: {
       'main-green':'#39DB4A',
+      'dark-green':'#2DAF3B',
     },
     },
   },
