@@ -1,0 +1,196 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "pasta a la Carbonara",
+            "image": "https://images.getrecipekit.com/20220607201637-pastacarbonara_shot7_13.jpg?class=16x9",
+            "ingredients": [
+                {
+                    "name": "pasta",
+                    "importance": 1
+                },
+                {
+                    "name": "tocineta",
+                    "importance": 1
+                },
+                {
+                    "name": "huevo",
+                    "importance": 1
+                },
+                {
+                    "name": "queso parmesano",
+                    "importance": 2
+                },
+                {
+                    "name": "pimienta negra",
+                    "importance": 2
+                },
+                {
+                    "name": "ajo",
+                    "importance": 3
+                }
+            ],
+            "instructions": [
+                "Cocine la pasta de acuerdo a las instrucciones en el paquete.",
+                "Cocine la tocineta en una sartén grande a fuego medio hasta que esté crujiente. Retire la tocineta y reserve.",
+                "En un tazón pequeño, bata los huevos, el queso parmesano y la pimienta negra.",
+                "Agregue el ajo picado a la grasa de la tocineta y cocine por 1-2 minutos.",
+                "Agregue la pasta cocida a la sartén y revuelva para cubrir con la grasa de la tocineta y el ajo.",
+                "Retire la sartén del fuego y vierta la mezcla de huevo, revolviendo rápidamente para cubrir la pasta.",
+                "Desmenuce la tocineta cocida sobre la pasta y sirva inmediatamente."
+    
+            ],
+            "Categories": [
+                "Italiana",
+                "Pasta",
+                "Almuerzo"
+            ],
+            "Difficulty": "Fácil"
+        },
+        {
+            "id": 2,
+            "name": "Pollo parmesano",
+            "image": "https://www.example.com/chicken-parmesan.jpg",
+            "ingredients": [
+                {
+                    "name": "pechuga de pollo",
+                    "importance": 1
+                },
+                {
+                    "name": "harina",
+                    "importance": 2
+                },
+                {
+                    "name": "huevo",
+                    "importance": 2
+                },
+                {
+                    "name": "migas de pan",
+                    "importance": 2
+                },
+                {
+                    "name": "salsa marinara",
+                    "importance": 1
+                },
+                {
+                    "name": "queso mozzarella",
+                    "importance": 1
+                },
+                {
+                    "name": "queso parmesano",
+                    "importance": 2
+                },
+                {
+                    "name": "aceite de oliva",
+                    "importance": 2
+                },
+                {
+                    "name": "sal",
+                    "importance": 3
+                },
+                {
+                    "name": "pimienta negra",
+                    "importance": 3
+                }
+            ],
+            "instructions": [
+                "Precaliente el horno a 375 ° F.",
+                "Aplaste las pechugas de pollo hasta obtener un grosor uniforme y sazone con sal y pimienta negra.",
+                "Configure una estación de empanado con tres platos poco profundos: uno con harina, uno con huevos batidos y uno con migas de pan.",
+                "Pase cada pechuga de pollo por la harina, sacudiendo el exceso, luego sumérjala en la mezcla de huevo y cúbrala con las migas de pan.",
+                "Caliente el aceite de oliva en una sartén grande a fuego medio-alto. Agregue las pechugas de pollo y cocine hasta que estén doradas por ambos lados.",
+                "Transfiera las pechugas de pollo a una fuente para hornear y cubra con salsa marinara, queso mozzarella y queso parmesano.",
+                "Hornee en el horno precalentado durante 20-25 minutos, hasta que el queso se derrita y burbujee.",
+                "Sirva caliente con salsa marinara adicional y queso parmesano rallado, si lo desea."
+            ],
+            "Categories": [
+                "Italiana",
+                "Pollo",
+                "Cena"
+            ],"Difficulty": "Media"
+        },
+        {
+            "id": 3,
+            "name": "Tostadas de Aguacate",
+            "image": "https://images.getrecipekit.com/20220607201637-pastacarbonara_shot7_13.jpg?class=16x9",
+            "ingredients": [
+                {
+                    "name": "pan",
+                    "importance": 1
+                },
+                {
+                    "name": "aguacate",
+                    "importance": 1
+                },
+                {
+                    "name": "tomate",
+                    "importance": 2
+                },
+                {
+                    "name": "sal",
+                    "importance": 2
+                },
+                {
+                    "name": "pimienta negra",
+                    "importance": 3
+                },
+                {
+                    "name": "huevo cocido",
+                    "importance": 3
+                }
+            ],
+            "instructions": [
+                "Tuesta el pan y unta aguacate maduro sobre las tostadas",
+                "Agrega rodajas de tomate y sazona con sal y pimienta",
+                "Opcional: coloca un huevo pochado en la parte superior"
+            ],
+            "Categories": [
+                "Desayuno"
+            ],
+            "Difficulty": "Fácil"
+        },
+        {
+            "id": 4,
+            "name": "Sopa de tomate",
+            "image": "https://images.getrecipekit.com/20220607201637-pastacarbonara_shot7_13.jpg?class=16x9",
+            "ingredients": [
+                {
+                    "name": "tomates",
+                    "importance": 1
+                },
+                {
+                    "name": "cebolla",
+                    "importance": 1
+                },
+                {
+                    "name": "ajo",
+                    "importance": 2
+                },
+                {
+                    "name": "caldo (de pollo o vegetal)",
+                    "importance": 2
+                },
+                {
+                    "name": "albahaca",
+                    "importance": 3
+                },
+                {
+                    "name": "crema",
+                    "importance": 3
+                }
+            ],
+            "instructions": [
+                "Sofríe la cebolla y el ajo en una cacerola con un poco de aceite hasta que estén dorados",
+                "Agrega los tomates y el caldo, y cocina a fuego lento durante unos 15-20 minutos",
+                "Usa una licuadora de inmersión para mezclar la sopa hasta que quede suave.",
+                "Agrega albahaca y crema (si se desea) antes de servir."
+            ],
+            "Categories": [
+                "Italiana",
+                "Sopa",
+                "Almuerzo"
+            ],
+            "Difficulty": "Fácil"
+        }
+    ]
+}
