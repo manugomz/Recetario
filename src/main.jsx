@@ -6,7 +6,7 @@ import './App.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Header titulo='ecetary'/>
+    <Header titulo='ecetary.com'/>
     <App />
 
   </React.StrictMode>,
