@@ -2,13 +2,14 @@ import React from 'react';
 
 function CategoriesBox(){
     return(
-        <div>
-            <button>
-            <img className='rounded-full bg-center self-center bg-main-green' src='../../public/images/desayuno.png'/>
+        <div className='py-4 px-5 w-60 m-5  aspect-square rounded-40 flex flex-col rounded-lg place-items-center shadow-xl shadow-gray-400 '>
+            <button className='bg-main-green bg-center hover:bg-dark-green rounded-full border-inherit p-4 '>
+                <img className='h-16 justify-self-center' src='../../public/images/Desayuno.png'/>
             </button>
-            <h2 className='text-center font-Inter'>Desayuno</h2>
-            <p className='text-center font-mono font-light'>(12 desayunos)</p>
+                <h3 className='text-center font-semibold font-Inter'>Break Fast</h3>
+                <p className='text-center text-xs font-thin font-Inter'>(12 Break Fast)</p>
         </div>
+        
     );
 }
 
