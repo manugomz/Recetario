@@ -2,6 +2,7 @@ import { useState } from 'react'
 import{ BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 import PopularCategories from './containers/PopularCategories'
 import PopularRecipes from './containers/PopularRecipes'
@@ -19,6 +20,7 @@ function App() {
         <Route path="/recetas-populares" element={<PopularRecipes/>} />
       </Routes>
       </BrowserRouter>
+      <Footer/>
     </>
   )
 }
