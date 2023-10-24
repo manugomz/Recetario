@@ -11,7 +11,7 @@ function Header({titulo}) {
             </div>
             <ul className='flex justify-around text-black text-lg font-semibold font-Inter'>
                 <a href="/"><li className='p-5 hover:text-green-300'>Home</li></a>
-                <a href="/categorias-populares"><li className='p-5 hover:text-main-green'>Popular Categories</li></a>
+                <a href="/categorias-populares"><li className='p-5 hover:text-green-300'>Popular Categories</li></a>
                 <a href="/recetas-populares"><li className='p-5 hover:text-green-300'>Popular Ingredients</li></a>
                 <a href="/about-us"><li className='p-5 hover:text-green-300'>About Us</li></a> 
             </ul> 
