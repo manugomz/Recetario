@@ -7,7 +7,6 @@ import PopularCategories from './containers/PopularCategories'
 import PopularRecipes from './containers/PopularRecipes'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -15,8 +14,9 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<h1>Home</h1>} />
-        <Route path="/categorias-populares" element={<PopularCategories/>} />
-        <Route path="/recetas-populares" element={<PopularRecipes/>} />
+        <Route path="/popular-categories" element={<PopularCategories/>} />
+        <Route path="/popular-recipes" element={<PopularRecipes/>} />
+        <Route path="/about-us" element={<h1>About us</h1>} />
       </Routes>
       </BrowserRouter>
     </>
