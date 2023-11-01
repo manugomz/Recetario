@@ -1,7 +1,6 @@
 import React from 'react';
 import {FaStar} from 'react-icons/fa6';
 import FavoriteButton from './FavoriteButton';
-import Recipe from '../containers/Recipe';
 
 function RecipeBox() {
     return (
