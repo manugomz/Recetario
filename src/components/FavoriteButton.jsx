@@ -9,7 +9,7 @@ const FavoriteButton = () => {
   return (
     <button className={`flex items-center
                         h-1/6 w-1/5 min-w-[25%]
-                        self-end 
+                        absolute top-0 right-0
                         bg-green-300 
                         rounded-tr-[2.5rem] rounded-bl-[2.5rem] 
                         hover:bg-green-500 hover:shadow-light hover:-translate-y-1 hover:duration-300
