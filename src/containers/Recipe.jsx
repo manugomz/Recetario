@@ -27,9 +27,12 @@ const Recipe = () => {
           Rating
         </div>
       </div>
-      <article className="flex flex-col self-center my-10 w-5/6 h-2/3">
-        <section className="bg-green-100 mx-5 h-full p-6 rounded-b-lg">
-          <h2 className="mb-5">INGREDIENTS</h2>
+      <article className=" self-center my-10 w-5/6 h-2/3">
+        <div className="flex flex-col md:flex-row w-full">
+        <section className="bg-green-100 mx-5 h-full p-6 rounded-b-lg 
+              md:w-2/6 md:mx-0 md:my-2 md:rounded-none
+              lg:w-1/2">
+          <h2 className="mb-5 font-bold">INGREDIENTS</h2>
           <ul className="flex-col ml-2">
             <li className={listText}>
               <p>
@@ -94,32 +97,20 @@ const Recipe = () => {
           </ul>
         </section>
         <img
-          className="h-auto rounded-xl order-first"
+          className="h-auto rounded-xl order-first md:order-none md:w-4/6 md:object-cover"
           src="../../public/images/donut.jpg"
         />
-        <section className=" mx-5 h-full p-6">
-          <h2 className="mb-5">INSTRUCTIONS</h2>
-          <p>Dissolve yeast in warm water in 2 1/2-quart bowl.</p>
-          <p>Add milk, sugar, salt, eggs, shortening and 2 cups flour.</p>
-          <p>Beat on low for 30 seconds, scraping bowl constantly.</p>
-          <p>Beat on medium speed for 2 minutes, scraping bowl occasionally.</p>
-          <p>Stir in remaining flour until smooth.</p>
-          <p>Cover and let rise until double, 50-60 minutes.</p>
-          <p>(Dough is ready when indentation remains when touched)</p>
-          <p>Turn dough onto floured surface; roll around lightly to coat with flour.</p>
-          <p>Gently roll dough 1/2-inch thick with floured rolling pin.</p>
-          <p>Cut with floured doughnut cutter.</p>
-          <p>Cover and let rise until double, 30-40 minutes.</p>
-          <p>Heat vegetable oil in deep fryer to 350°.</p>
-          <p>Slide doughnuts into hot oil with wide spatula.</p>
-          <p>Turn doughnuts as they rise to the surface.</p>
-          <p>Fry until golden brown, about 1 minute on each side.</p>
-          <p>Remove carefully from oil (do not prick surface); drain.</p>
-          <p>Dip the doughnuts into creamy glaze set on rack.</p>
-          <p>Glaze: Heat butter until melted.</p>
-          <p>Remove from heat.</p>
-          <p>Stir in powdered sugar and vanilla until smooth.</p>
-          <p>Stir in water, 1 tablespoon at a time, until desired consistency.</p>
+        </div>
+          <h2 className=" mx-2 h-full pt-6 mb-5 font-bold">INSTRUCTIONS</h2>
+        <section className=" mx-2 h-full p-2">
+          <p>Dissolve yeast in warm water in 2 1/2-quart bowl.Add milk, sugar, salt, eggs, shortening and 2 cups flour.
+            Beat on low for 30 seconds, scraping bowl constantly.Beat on medium speed for 2 minutes, scraping bowl occasionally.Stir in remaining flour until smooth.
+            Cover and let rise until double, 50-60 minutes.(Dough is ready when indentation remains when touched)
+            Turn dough onto floured surface; roll around lightly to coat with flour.
+            Gently roll dough 1/2-inch thick with floured rolling pin.Cut with floured doughnut cutter.Cover and let rise until double, 30-40 minutes.<br/>
+          Heat vegetable oil in deep fryer to 350°.Slide doughnuts into hot oil with wide spatula.Turn doughnuts as they rise to the surface.
+          Fry until golden brown, about 1 minute on each side.Remove carefully from oil (do not prick surface); drain.Dip the doughnuts into creamy glaze set on rack.
+          <br/><br/><br/>Glaze: <br/>Heat butter until melted.Remove from heat.Stir in powdered sugar and vanilla until smooth.Stir in water, 1 tablespoon at a time, until desired consistency.</p>
         </section>
       </article>
     </div>
