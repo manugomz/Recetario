@@ -7,10 +7,8 @@ function InfoAbout () {
             <h2 className='font-Inter font-bold text-center h-6 pb-10'>The only thing we are serious about is food.</h2>
                 <div className='flex flex-row justify-evenly '>
                     <div className='w-1/4 h-1/4 static'>
-                        <img className='h-80 absolute z-30' src="../../images/Chef.png" />
-                        <img className='h-10 absolute z-10 left-bottom' src="../../images/Feliz.png" />
-                        <img className='h-10 absolute z-20 ' src=".../../images/Pizza.png" />
-                        <img className='h-40 absolute z-20 bottom-px' src="../../images/Fondo.png" />
+                        <img className='h-80 absolute z-30' src="../src/assets/images/Chef.png" />
+                        <img className='h-40 absolute z-20 bottom-px' src="../src/assets/images/Fondo.png" />
                     </div>
                     <div className='w-1/4 h-1/4 static'>
                         <p className='font-Inter text-justify tracking-tighter font-thin text-sm'>"Más allá de la simple pasión por la cocina, somos un trío de entusiastas estudiantes que se unieron con un propósito único: crear un rincón culinario donde los sabores y los sueños se fusionan. Nuestra misión es sencilla pero poderosa: unir a las personas a través del placer de la comida. Buscamos ser un faro de inspiración, un recurso confiable y un refugio gastronómico para todos aquellos que anhelan descubrir y disfrutar de sus platos favoritos.<br></br>

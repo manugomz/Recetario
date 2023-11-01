@@ -9,7 +9,7 @@ function Footer() {
             <div className='grid font-Inter grid-cols-1 grid-rows-1 items-center content-around py-2 col-span-2'>
                 {/* Ejemplo para hacer el logo más grande en pantallas más grandes */}
                 <div className='flex justify-center py-2'>
-                    <img className='w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10' src='../../images/logoR.png'/>
+                    <img className='w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10' src='../src/assets/images/logoR.png'/>
                     <a href='#!' className='font-semibold text-black text-xl sm:text-2xl md:text-3xl font-Inter'>ecetary.com</a> 
                 </div>
                 <div className='w-22'>
