@@ -8,12 +8,12 @@ function RecipeBox() {
         <div className='flex flex-col justify-around min-w-[300px] max-w-sm aspect-square shadow-xl rounded-[2.5rem] m-5 pl-6 pb-5'>
             <FavoriteButton/>
             <img className='h-1/2 self-center' src='../../public/images/pad-thai.png'/>
-                <h2 className='font-semibold mt-1'>Arroz con huevo</h2>
-                <p className='text-gray-700 font-medium'>Descripción de la receta</p>
+                <h2 className='font-Inter font-semibold mt-1'>Arroz con huevo</h2>
+                <p className='font-Inter text-gray-700 font-medium'>Descripción de la receta</p>
             <div className='flex justify-around pb-2'>
-                <p>90 min</p>
+                <p className='font-Inter'>90 min</p>
                 <div className='flex items-center'>
-                    <p className='pr-1'>4.5 </p>
+                    <p className='font-Inter pr-1'>4.5 </p>
                     <FaStar 
                         className='w-5 h-5'
                         color='#FFE605'
