@@ -10,7 +10,7 @@ function RecipeBox() {
         m-5 pl-6 pb-5'>
             <div className='w-full'>
             <FavoriteButton/>
-                <img className='self-center object-cover' src='../../public/images/pad-thai.png'/>
+                <img className='self-center object-cover' src='../src/assets/images/pad-thai.png'/>
             </div>
                 <h2 className='font-Inter font-semibold mt-1'>Arroz con huevo</h2>
             <p className='font-Inter text-gray-700 font-medium'>Descripción de la receta</p>
