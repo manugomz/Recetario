@@ -4,7 +4,7 @@ import SocialMediaIcons from './SocialMediaIcons';
 
 function Footer() {
     return (
-        <footer className='fixed bottom-0 justify-items-center'>
+        <footer className='justify-items-center'>
             <div className='items-start justify-items-center container mx-auto grid grid-cols-1 md:grid-cols-5 text-xs sm:text-sm md:text-base lg:text-lg'>
                 <div className='col-span-3 md:col-span-3 font-Inter items-center content-around'>
                     <div className='flex justify-center py-2'>
