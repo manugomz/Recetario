@@ -1,15 +1,15 @@
-import React from 'react';1
+import React from 'react';
 
 function InfoAbout () {
     return (
-        <div className='p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20'>
+        <section>
             <h1 className='font-Inter font-bold 
-                        text-red-500 text-center leading-10 text-xs
-                        sm:text-sm md:text-base lg:text-lg xl:text-xl 
-                        mb-4 sm:mb-6'>ABOUT US</h1>
+                        text-red-500 text-center text-xs
+                        md:text-sm lg:text-base xl:text-lg'>ABOUT US</h1>
             <h2 className='font-Inter font-extrabold 
                         text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
-                        mb-8 sm:mb-10'>The only thing we are serious about is food.</h2>
+                        '>The only thing we are serious about is food.</h2>
+            <div className='p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20'>
                 <div className='flex flex-col justify-center items-center'>
                     <div className='flex flex-row mb-4 sm:mb-0 sm:mr-8'>
                        <img className='rounded-e-full border-8 border-green-100 mx-10
@@ -36,6 +36,8 @@ function InfoAbout () {
                     </div>
                 </div>  
         </div>
+
+        </section>
     )
 }
 
