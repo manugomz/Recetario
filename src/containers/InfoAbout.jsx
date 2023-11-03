@@ -13,18 +13,18 @@ function InfoAbout () {
                 <div className='flex flex-col justify-center items-center'>
                     <div className='flex flex-row mb-4 sm:mb-0 sm:mr-8'>
                        <img className='rounded-e-full border-8 border-green-100 mx-10
-                                        w-20 sm:w-30 md:w-40 lg:w-50 
-                                        h-20 sm:h-30 md:h-40 lg:h-50' 
+                                        w-30 sm:w-30 md:w-40 lg:w-50 
+                                        h-30 sm:h-30 md:h-40 lg:h-50' 
                             src="../../src/assets/images/Manuela.jpeg" 
                             alt="Manuela" />
                        <img className='rounded-e-full border-8 border-green-100 mx-10
-                                        w-20 sm:w-30 md:w-40 lg:w-50
-                                        h-20 sm:h-30 md:h-40 lg:h-50' 
+                                        w-30 sm:w-30 md:w-40 lg:w-50
+                                        h-30 sm:h-30 md:h-40 lg:h-50' 
                             src="../../src/assets/images/Adriana.jpeg" 
                             alt="Adriana" />
                        <img className='rounded-e-full border-8 border-green-100 mx-10
-                                        w-20 sm:w-30 md:w-40 lg:w-50
-                                        h-20 sm:h-30 md:h-40 lg:h-50' 
+                                        w-30 sm:w-30 md:w-40 lg:w-50
+                                        h-30 sm:h-30 md:h-40 lg:h-50' 
                             src="../../src/assets/images/Natalia.jpg" 
                             alt="Natalia" />
                     </div>
