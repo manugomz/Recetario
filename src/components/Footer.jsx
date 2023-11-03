@@ -4,9 +4,9 @@ import SocialMediaIcons from './SocialMediaIcons';
 
 function Footer() {
     return (
-        <footer className='fixed bottom-0 justify-items-center'>
+        <footer className=' justify-items-center'>
             <div className='items-start justify-items-center container mx-auto grid grid-cols-1 md:grid-cols-5 text-xs sm:text-sm md:text-base lg:text-lg'>
-                <div className='col-span-3 md:col-span-3 font-Inter items-center content-around'>
+                <div className='col-span-3 md:col-span-2 font-Inter items-center content-around'>
                     <div className='flex justify-center py-2'>
                         <img className='w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10' src='../../src/assets/images/logoR.png'/>
                         <a href='' className='font-semibold text-black text-sm sm:text-base md:text-lg lg:text-xl font-Inter'>ecetary.com</a> 
