@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header({titulo}) {
     return (
-        <header className='flex pt-2 pb-2 px-2 gap-2
+        <header className='flex py-6 px-2 gap-2
                             flex-col sm:flex-row 
                             justify-around items-center'>
             <div className='flex items-center pr-4'>
