@@ -1,22 +1,43 @@
-import React from 'react';1
+import React from 'react';
 
 function InfoAbout () {
     return (
-        <div className=''>
-            <h1 className='font-Inter font-bold text-red-500 text-center leading-10 text-sm h-6 pb-10'>ABOUT US</h1>
-            <h2 className='font-Inter font-bold text-center h-6 pb-10'>The only thing we are serious about is food.</h2>
-                <div className='flex flex-row justify-evenly '>
-                    <div className='w-1/4 h-1/4 static'>
-                        <img className='h-80 absolute z-30' src="../src/assets/images/Chef.png" />
-                        <img className='h-40 absolute z-20 bottom-px' src="../src/assets/images/Fondo.png" />
+        <section>
+            <h1 className='font-Inter font-bold 
+                        text-red-500 text-center text-xs
+                        md:text-sm lg:text-base xl:text-lg'>ABOUT US</h1>
+            <h2 className='font-Inter font-extrabold 
+                        text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
+                        '>The only thing we are serious about is food.</h2>
+            <div className='p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20'>
+                <div className='flex flex-col justify-center items-center'>
+                    <div className='flex flex-row mb-4 sm:mb-0 sm:mr-8'>
+                       <img className='rounded-e-full border-8 border-green-100 mx-10
+                                        w-30 sm:w-30 md:w-40 lg:w-50 
+                                        h-30 sm:h-30 md:h-40 lg:h-50' 
+                            src="../../src/assets/images/Manuela.jpeg" 
+                            alt="Manuela" />
+                       <img className='rounded-e-full border-8 border-green-100 mx-10
+                                        w-30 sm:w-30 md:w-40 lg:w-50
+                                        h-30 sm:h-30 md:h-40 lg:h-50' 
+                            src="../../src/assets/images/Adriana.jpeg" 
+                            alt="Adriana" />
+                       <img className='rounded-e-full border-8 border-green-100 mx-10
+                                        w-30 sm:w-30 md:w-40 lg:w-50
+                                        h-30 sm:h-30 md:h-40 lg:h-50' 
+                            src="../../src/assets/images/Natalia.jpg" 
+                            alt="Natalia" />
                     </div>
-                    <div className='w-1/4 h-1/4 static'>
-                        <p className='font-Inter text-justify tracking-tighter font-thin text-sm'>"Más allá de la simple pasión por la cocina, somos un trío de entusiastas estudiantes que se unieron con un propósito único: crear un rincón culinario donde los sabores y los sueños se fusionan. Nuestra misión es sencilla pero poderosa: unir a las personas a través del placer de la comida. Buscamos ser un faro de inspiración, un recurso confiable y un refugio gastronómico para todos aquellos que anhelan descubrir y disfrutar de sus platos favoritos.<br></br>
-                    Nuestra visión es la de un mundo donde la cocina sea una aventura compartida, donde cada receta se convierta en un viaje lleno de descubrimientos. Deseamos ser el compañero constante en tu búsqueda de sabores, un lugar donde puedas encontrar todas tus comidas favoritas, y a la vez, un espacio para experimentar y explorar nuevas delicias culinarias. Queremos hacer que cocinar sea fácil y divertido para todos, sin importar su nivel de experiencia en la cocina.<br></br>
-                    Únete a nosotros en este viaje gastronómico y descubre la magia que se encuentra en cada receta. ¡Bienvenidos a nuestro rincón culinario, donde los sueños se cocinan a fuego lento y los sabores se convierten en memorias inolvidables!"</p>
+                    <div className='pt-8 mx-6'>
+                        <p className='font-Inter font-extralight text-justify text-gray-700 
+                                    text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl'>"Beyond a mere passion for cuisine, we constitute a trio of dedicated students who have united with a singular purpose: to establish a culinary sanctuary where flavors and dreams harmoniously converge. Our mission is straightforward yet profound: to foster human connection through the delight of gastronomy. We strive to be a wellspring of inspiration, a dependable resource, and a culinary refuge for all those who yearn to explore and relish their cherished dishes.
+                        Our vision encompasses a world in which cooking becomes a communal adventure, wherein each recipe evolves into a journey filled with revelations. We aspire to serve as an unwavering companion in your quest for flavors, a place where you can encounter all your preferred meals, while simultaneously providing a platform to experiment and explore novel culinary pleasures. Our aim is to make cooking accessible and enjoyable for all, irrespective of one's culinary expertise.
+                        Join us on this gastronomic odyssey and uncover the enchantment embedded within each recipe. Welcome to our culinary haven, where dreams simmer slowly, and flavors transform into indelible memories."</p>
                     </div>
                 </div>  
         </div>
+
+        </section>
     )
 }
 
