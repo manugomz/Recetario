@@ -3,11 +3,11 @@ import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from 'react-icons/ci';
 
 function SocialMediaIcons() {
     return (
-        <div className='flex justify-around py-2 px-9'>
-            <CiFacebook className='w-4 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 hover:text-green-300'/>
-            <CiInstagram className='w-4 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 hover:text-green-300'/>
-            <CiTwitter className='w-4 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 hover:text-green-300'/>
-            <CiYoutube className='w-4 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 hover:text-green-300'/>
+        <div className='flex place-content-center gap-8'>
+            <CiFacebook className='w-4 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 hover:text-green-300'/>
+            <CiInstagram className='w-4 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 hover:text-green-300'/>
+            <CiTwitter className='w-4 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 hover:text-green-300'/>
+            <CiYoutube className='w-4 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 hover:text-green-300'/>
         </div>
     );
 }
