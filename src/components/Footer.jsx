@@ -4,14 +4,6 @@ import SocialMediaIcons from './SocialMediaIcons';
 
 function Footer() {
     return (
-<<<<<<< HEAD
-        <footer className='justify-items-center'>
-            <div className='items-start justify-items-center container mx-auto grid grid-cols-1 md:grid-cols-5 text-xs sm:text-sm md:text-base lg:text-lg'>
-                <div className='col-span-3 md:col-span-3 font-Inter items-center content-around'>
-                    <div className='flex justify-center py-2'>
-                        <img className='w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10' src='../../src/assets/images/logoR.png'/>
-                        <a href='' className='font-semibold text-black text-sm sm:text-base md:text-lg lg:text-xl font-Inter'>ecetary.com</a> 
-=======
         <footer className='md:place-content-center lg:place-content-center border-x-4'>
             <div className='container flex flex-col md:flex-row width-[100%] md:width-[100%] lg:width-[100%] 
                             md:gap-8 md:place-content-center lg:place-content-center py-10'>
@@ -21,7 +13,6 @@ function Footer() {
                         src='../../src/assets/images/logoR.png'/>
                         <a href='' className='font-semibold text-black self-center
                                             text-base md:text-lg lg:text-xl font-Inter'>ecetary.com</a> 
->>>>>>> origin
                     </div>
                     <div className='text-center justify-items-center py-3 px-4
                                     text-black text-sm md:text-base lg:text-lg font-Inter'>
