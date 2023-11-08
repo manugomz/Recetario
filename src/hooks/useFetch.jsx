@@ -9,7 +9,7 @@ function useFetch (apiUrl) {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch(`/1/search.php?s=Arrabiata`,{
+            const response = await fetch(`www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata`,{
               method: "GET", 
               mode: 'cors',
               headers: {
