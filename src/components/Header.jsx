@@ -14,8 +14,8 @@ function Header({titulo}) {
                             mx-auto px-2
                             text-black text-base md:text-lg lg:text-xl font-semibold font-Inter'>
                     <a href="/"><li className='p-2 hover:text-green-300'>Home</li></a>
+                    <a href="/all-recipes"><li className='p-2 hover:text-green-300'>All Recipes</li></a>
                     <a href="/popular-categories"><li className='p-2 hover:text-green-300'>Popular Categories</li></a>
-                    <a href="/popular-recipes"><li className='p-2 hover:text-green-300'>Popular Recipes</li></a>
                     <a href="/about-us"><li className='p-2 hover:text-green-300'>About Us</li></a> 
                 </ul> 
             </nav>

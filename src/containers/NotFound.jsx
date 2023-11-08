@@ -9,7 +9,7 @@ function NotFound() {
                             xl:h-[40vh] xl:w-1/2
                             2xl:text-center'>
                 <p className='font-Inter text-[0.6rem] font-light 
-                                md:text-base '>Oh-Oh! Something went wrong</p>
+                                md:text-base '>Oops! It seems we ate the last plate</p>
                 <h1 className='font-Inter font-bold text-2xl text-green-300 
                                 drop-shadow-md
                                 md:text-[3rem] md:py-2
