@@ -3,6 +3,7 @@ import{ BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Home from './containers/Home'
 
 
 import PopularCategories from './containers/PopularCategories'
@@ -17,7 +18,7 @@ function App() {
       <Header titulo='ecetary.com'/>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/popular-categories" element={<PopularCategories/>} />
         <Route path="/popular-recipes" element={<PopularRecipes/>} />
         <Route path="/about-us" element={<InfoAbout/>} />
