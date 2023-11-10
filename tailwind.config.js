@@ -20,12 +20,6 @@ export default {
       boxShadow: {
         'light': "0px 10px 30px -10px theme('colors.green.100')",
       },
-      /*
-      .slide-top {
-	-webkit-animation: ;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-      */
     },
   },
   plugins: [],
