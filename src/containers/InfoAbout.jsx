@@ -4,14 +4,13 @@ function InfoAbout () {
     return (
         <section>
             <h1 className='font-Inter font-bold 
-                        text-red-500 text-center text-xs
-                        md:text-sm lg:text-base xl:text-lg'>ABOUT US</h1>
+                        text-red-500 text-center text-xs'>ABOUT US</h1>
             <h2 className='font-Inter font-extrabold 
                         text-center text-xl 
                         '>The only thing we are serious about is food.</h2>
-            <div className='p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20'>
+            <div className=''>
                 <div className='flex flex-col justify-center items-center'>
-                    <div className='flex flex-row mb-4 sm:mb-0 sm:mr-8'>
+                    <div className='flex flex-row'>
                        <img className='rounded-e-full border-8 border-green-100
                                         h-40' 
                             src="../../src/assets/images/Manuela.jpeg" 

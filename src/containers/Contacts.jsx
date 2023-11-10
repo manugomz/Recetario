@@ -5,11 +5,11 @@ function Contacts () {
         <section>
             <div className='flex flex-col justify-around'>
                 <h1 className='font-Inter font-bold 
-                             text-red-500 text-center leading-10 text-sm 
-                            h-6 pb-10'>CONTAC US</h1>
+                             text-red-500 text-center text-sm 
+                            h-6 pb-10'>CONTACT US</h1>
                 <div className='flex flex-row justify-evenly relative place-items-center'>
-                    <div className='relative w-96 h-96'>
-                        <img className='absolute z-20 h-80 w-80' 
+                    <div className='relative w-60 h-96'>
+                        <img className='absolute z-20 h-90 bottom-px' 
                              src="../../src/assets/images/Chef.png" 
                              alt="Chef" />
                         <img className='absolute bottom-px' 
