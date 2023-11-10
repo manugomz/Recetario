@@ -9,6 +9,7 @@ import Home from './containers/Home'
 import PopularCategories from './containers/PopularCategories'
 import PopularRecipes from './containers/PopularRecipes'
 import InfoAbout from './containers/InfoAbout'
+import Contacts from './containers/Contacts'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/popular-categories" element={<PopularCategories/>} />
         <Route path="/popular-recipes" element={<PopularRecipes/>} />
         <Route path="/about-us" element={<InfoAbout/>} />
+        <Route path="/contact-us" element={<Contacts/>} />
       </Routes>
       </BrowserRouter>
       <Footer/>
