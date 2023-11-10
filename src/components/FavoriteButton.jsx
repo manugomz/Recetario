@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import {HiOutlineHeart} from 'react-icons/hi';
 
-const FavoriteButton = () => {
+const FavoriteButton = (id) => {
   const [isFavorite, setIsFavorite] = useState(false);
-
   const handleFavoriteToggle = () => {setIsFavorite(!isFavorite)};
+
+  //! is favorite? add to list : remove from list
 
   return (
     <button className={`flex items-center absolute top-0 right-0
-                        h-[15%] w-[18%] p-1
+                        h-[15%] w-[25%] p-1
                         bg-green-300 
                         rounded-tr-[2rem] rounded-bl-[2rem] 
                         hover:bg-green-500 hover:shadow-light hover:-translate-y-1 hover:duration-300
