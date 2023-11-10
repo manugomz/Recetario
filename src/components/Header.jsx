@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchBtn from './SearchBtn';
 
 function Header({titulo}) {
     return (
@@ -20,13 +21,17 @@ function Header({titulo}) {
                 </ul> 
             </nav>
             <div className='flex items-center justify-center gap-4 '>
-                <img className='flex items-center w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 '  src='../../src/assets/images/icon_search.png'/>
+                <button id=''>
+                    <img className='flex items-center w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 '  src='../../src/assets/images/icon_search.png'/>
+                </button>     
+                        
                 <button className='flex items-center bg-green-300  rounded-full px-4 py-2
                                     h-1/6 w-[120%] min-w-[25%] 
                                     hover:bg-green-500 hover:shadow-light'>
                     <img className='w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 '  src='../../src/assets/images/fi-rr-phone-call.png'/>
                     <div className='pl-2 pr-1 text-white text-base md:text-lg lg:text-xl font-semibold'>Contact</div>
-                </button>    
+                </button> 
+                <SearchBtn/>   
             </div>
         </header>       
     );    
