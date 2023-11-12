@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './containers/Home'
 
-import PopularCategories from './containers/PopularCategories'
+import Categories from './containers/Categories'
 import AllRecipes from './containers/AllRecipes'
 import InfoAbout from './containers/InfoAbout'
 import NotFound from './containers/NotFound'
@@ -19,7 +19,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/popular-categories" element={<PopularCategories/>} />
+        <Route path="/categories" element={<Categories/>} />
         <Route path="/all-recipes" element={<AllRecipes/>} />
         <Route path="/about-us" element={<InfoAbout/>} />
         <Route path="/contact-us" element={<Contacts/>} />
