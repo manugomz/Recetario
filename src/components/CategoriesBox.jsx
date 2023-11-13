@@ -1,4 +1,5 @@
 import React from 'react';
+import RecipiesbyCategories from '../containers/RecipiesbyCategories';
 
 function CategoriesBox({data}){ 
     console.log(data);
