@@ -12,13 +12,13 @@ function useFetch(apiUrl) {
         const response = await fetch(apiUrl);
 
         if (!response.ok)
-          throw { status: res.status, statusText: res.statusText };
+          throw Error("Could not fetch the data for that resource") ;
 
         const jsonData = await response.json();
         setData(jsonData);
         setIsLoading(false);
       } catch (error) {
-        setError(error);
+        setError(error.message);
         setIsLoading(false);
       }
     };

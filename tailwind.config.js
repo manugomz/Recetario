@@ -20,6 +20,9 @@ export default {
       boxShadow: {
         'light': "0px 10px 30px -10px theme('colors.green.100')",
       },
+      gridTemplateColumns: {
+        '13': 'repeat(13, minmax(0, 1fr))',
+      },
     },
   },
   plugins: [],

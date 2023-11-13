@@ -3,6 +3,7 @@ import { FaStar } from "react-icons/fa6";
 import FavoriteButton from "./FavoriteButton";
 
 function RecipeBox({ recipe }) {
+  
   return (
     <div
       className="relative flex flex-col justify-around 
@@ -13,10 +14,12 @@ function RecipeBox({ recipe }) {
     >
       <div className="w-full">
         <FavoriteButton id={recipe.idMeal}/>
-        <img
-          className="self-center object-cover rounded-t-[2rem]"
-          src={recipe.strMealThumb}
-        />
+        <button onClick={()=>console.log(recipe.idMeal)}>
+          <img
+            className="self-center object-cover rounded-t-[2rem]"
+            src={recipe.strMealThumb}
+          />
+        </button>
       </div>
       <div className="pl-6 pt-2">
         <h2 className="font-Inter font-semibold mt-1">{recipe.strMeal}</h2>
