@@ -1,14 +1,15 @@
 import React from 'react';
+
+import { useState } from 'react';
 import RecipeBox from '../components/RecipeBox';
-import useFetch from '../hooks/useFetch';
 
-function RecipiesbyCategories ({category}) {
 
-    let {data,isLoading,error} = useFetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=seafood`)
+function RecipiesbyCategories () {
+    const CategoryList = useState ();
 
     return(
         <div>
-            <RecipeBox/>
+            <RecipeBox CategoryListList={CategoryList}/>
         </div>
     )
 }
