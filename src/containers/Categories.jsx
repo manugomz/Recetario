@@ -3,7 +3,7 @@ import CategoriesBox from '../components/CategoriesBox';
 import useFetch from '../hooks/useFetch';
 
 function Categories(){
-    let {data,isLoading,error} = useFetch(`https://www.themealdb.com/api/json/v1/1/categories.php?c=`)
+    let {data,isLoading,error} = useFetch(`https://www.themealdb.com/api/json/v1/1/categories.php`)
     
 
     return(
