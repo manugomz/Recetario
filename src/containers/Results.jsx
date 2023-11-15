@@ -1,25 +1,52 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-function name() {
+const Results = () => {
+  const [mealsData, setMealsData] = useState([]);
+  const [mealDetails, setMealDetails] = useState(null);
+
+  const location = useLocation();
+  const { state } = location;
+  const { meals: searchResults } = state || {};
+
+  useEffect(() => {
+    // Realizar la búsqueda cuando searchResults cambie
+    if (searchResults) {
+      fetch(
+        `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchResults}`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.meals) {
+            setMealsData(data.meals);
+          } else {
+            setMealsData([]);
+          }
+        });
+    }
+  }, [searchResults]);
+
   return (
     <div>
       <div>
-        {meals.map((meal) => (
-          <div className="meal-item" key={meal.idMeal} data-id={meal.idMeal}>
-            <div className="meal-img">
-              <img src={meal.strMealThumb} alt="food" />
+        {mealsData &&
+          mealsData.map((meal) => (
+            <div className="meal-item" key={meal.idMeal} data-id={meal.idMeal}>
+              <div className="meal-img">
+                <img src={meal.strMealThumb} alt="food" />
+              </div>
+              <div className="meal-name">
+                <h3>{meal.strMeal}</h3>
+                {/* No veo dónde está definida getMealRecipe, asegúrate de definirla o pasarla como prop */}
+                <button
+                  className="recipe-btn"
+                  onClick={() => getMealRecipe(meal.idMeal)}
+                >
+                  Get Recipe
+                </button>
+              </div>
             </div>
-            <div className="meal-name">
-              <h3>{meal.strMeal}</h3>
-              <a
-                href="#"
-                className="recipe-btn"
-                onClick={() => getMealRecipe(meal.idMeal)}>
-                Get Recipe
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
       </div>
 
       <div>
@@ -38,7 +65,8 @@ function name() {
               <a
                 href={mealDetails.strYoutube}
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 Watch Video
               </a>
             </div>
@@ -47,4 +75,6 @@ function name() {
       </div>
     </div>
   );
-}
+};
+
+export default Results;
