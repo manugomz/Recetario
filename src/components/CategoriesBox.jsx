@@ -1,7 +1,6 @@
 import React from 'react';
 
-function CategoriesBox(data){ 
-
+function CategoriesBox({data}){ 
     
     return(
         <div>
