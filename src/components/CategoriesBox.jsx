@@ -1,10 +1,11 @@
 import React from 'react';
 
+function CategoriesBox(data){ 
 
-function CategoriesBox({CategoryList}){ 
     
     return(
         <div>
+            
             <button className='flex flex-col justify-around items-center
                         rounded-2xl shadow-2xl shadow-gray-400 p-4 h-48
                         bg-center  aspect-square [&>div]:hover:bg-green-500'

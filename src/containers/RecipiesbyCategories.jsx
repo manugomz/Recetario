@@ -1,14 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import RecipeBox from '../components/RecipeBox';
-import useFetch from '../hooks/useFetch';
-
 
 function RecipiesbyCategories () {
-
+    const CategoryList = useState()
    
     return(
         <div>
-            <RecipeBox/>
+            <RecipeBox CategoryList={CategoryList}/>
         </div>
     )
 }
