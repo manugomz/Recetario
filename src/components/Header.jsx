@@ -21,10 +21,7 @@ function Header({titulo}) {
                 </ul> 
             </nav>
             <div className='flex items-center justify-center gap-4 '>
-                <button id=''>
-                    <img className='flex items-center w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 '  src='../../src/assets/images/icon_search.png'/>
-                </button>     
-                        
+                          
                 <button className='flex items-center bg-green-300  rounded-full px-4 py-2
                                     h-1/6 w-[120%] min-w-[25%] 
                                     hover:bg-green-500 hover:shadow-light'>
