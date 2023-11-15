@@ -3,11 +3,12 @@ import RecipeBox from '../components/RecipeBox';
 import useFetch from '../hooks/useFetch';
 
 
-function RecipiesbyCategories ({CategoryList}) {
+function RecipiesbyCategories () {
+
    
     return(
         <div>
-            <RecipeBox CategoryList={CategoryList}/>
+            <RecipeBox/>
         </div>
     )
 }
