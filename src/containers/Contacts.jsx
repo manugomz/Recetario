@@ -1,25 +1,26 @@
 import React from 'react';
+import ImagenContact from '../components/ImagenContact';
+import Forms from '../components/Forms';
 
 function Contacts () {
     return (
-        <section>
-            <div className='flex flex-col justify-around'>
+        <section className='anantialiased'>
+            <div className='flex flex-col w-full  items-center justify-center'>
                 <h1 className='font-Inter font-bold 
                              text-red-500 text-center text-sm 
-                            h-6 pb-10'>CONTACT US</h1>
-                <div className='flex flex-row justify-evenly relative place-items-center'>
-                    <div className='relative w-60 h-96'>
-                        <img className='absolute z-20 h-90 bottom-px' 
-                             src="../../src/assets/images/Chef.png" 
-                             alt="Chef" />
-                        <img className='absolute bottom-px' 
-                             src="../../src/assets/images/Fondo.png" 
-                             alt="Fondo" />
-                    </div>
-                    <div className='font-Inter text-center text-xl'>
-                        <p>Tel: +64 958 248 966</p>
-                        <p>Email: info@recetary.com</p>                
-                    </div> 
+                            h-6 p-6'>CONTACT US</h1>
+                <p className='font-Inter text-center pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione adipisci modi ex placeat voluptatem nesciunt iste? Placeat eaque dolore consequuntur distinctio repellendus voluptates itaque, reprehenderit, sint temporibus dicta maiores consectetur.</p>
+            </div>
+            
+            <div className='flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 
+                            rounded-xl shadow-lg justify-around
+                            p-8 w-full'>
+                                
+                <div className='flex flex-col justify-between space-y-8 p-8'>
+                    <ImagenContact/>
+                </div>
+                <div className='flex flex-col p-8'>
+                    <Forms/>
                 </div>
             </div>
         </section>
