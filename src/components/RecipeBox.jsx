@@ -1,25 +1,27 @@
-import React from "react";
 import { FaStar } from "react-icons/fa6";
 import FavoriteButton from "./FavoriteButton";
+import { Link } from "react-router-dom";
 
 function RecipeBox({ recipe }) {
   
+  let link=`/recipe/${recipe.idMeal}`
+
   return (
     <div
       className="relative flex flex-col justify-around 
         min-w-[250px] max-w-[18rem] aspect-square 
         shadow-xl rounded-[2.5rem] 
         m-5 pb-5
-        2xl:max-w-sm "
+        2xl:max-w-sm"
     >
       <div className="w-full">
-        <FavoriteButton id={recipe.idMeal}/>
-        <button onClick={()=>console.log(recipe.idMeal)}>
+        <FavoriteButton idMeal={recipe.idMeal}/>
+        <Link to={link}>
           <img
             className="self-center object-cover rounded-t-[2rem]"
             src={recipe.strMealThumb}
           />
-        </button>
+        </Link>
       </div>
       <div className="pl-6 pt-2">
         <h2 className="font-Inter font-semibold mt-1">{recipe.strMeal}</h2>

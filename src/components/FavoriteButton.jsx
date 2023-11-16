@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {HiOutlineHeart} from 'react-icons/hi';
+import useFavoriteContext from '../hooks/useFavoriteContext';
 
-const FavoriteButton = (id) => {
-  const [isFavorite, setIsFavorite] = useState(false);
-  const handleFavoriteToggle = () => {setIsFavorite(!isFavorite)};
-
-  //! is favorite? add to list : remove from list
+const FavoriteButton = ({idMeal}) => {
+  
+  const {isFavorite, addFavorite, removeFavorite}= useFavoriteContext();
+  
+  const isFavoriteMeal =isFavorite(idMeal);
+  const handleFavoriteToggle = () => {isFavoriteMeal? removeFavorite(idMeal):addFavorite(idMeal)};
 
   return (
     <button className={`flex items-center absolute top-0 right-0
@@ -15,7 +17,7 @@ const FavoriteButton = (id) => {
                         hover:bg-green-500 hover:shadow-light hover:-translate-y-1 hover:duration-300
                         [&>svg]:hover:scale-125 [&>svg]:duration-300 
                         active:bg-green-700 active:shadow-none active:translate-y-0 active:duration-0
-                        ${isFavorite ? '[&>svg]:fill-white':'[&>svg]:fill-none' }
+                        ${isFavoriteMeal ? '[&>svg]:fill-white':'[&>svg]:fill-none' }
                     `}
     onClick={handleFavoriteToggle}>
         <HiOutlineHeart 

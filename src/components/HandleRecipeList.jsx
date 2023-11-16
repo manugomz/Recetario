@@ -7,7 +7,6 @@ const HandleRecipeList = ({currentLetter}) => {
     let {data,isLoading,error}= useFetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${currentLetter}`);
     let meals = data.meals;
     
-
     if (isLoading){
         return <div className='text-xl font-Inter pt-2 text-center'>Loading...</div>
 
@@ -17,7 +16,6 @@ const HandleRecipeList = ({currentLetter}) => {
             <div className='text-xs font-Inter pt-2 text-center w-2/3 self-center text-gray-800'>{error}</div>
         </div>)
             
-
     } else if (meals){
        return (
         <div className='grid grid-cols-1 
