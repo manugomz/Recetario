@@ -35,6 +35,9 @@ function Header({ titulo }) {
           <a href="/popular-categories">
             <li className="p-2 hover:text-green-300">Popular Categories</li>
           </a>
+          <a href="/about-us">
+            <li className="p-2 hover:text-green-300">About us</li>
+          </a>
           
         </ul>
       </nav>
