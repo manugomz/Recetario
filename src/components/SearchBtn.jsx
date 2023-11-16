@@ -20,26 +20,25 @@ const SearchBtn = ({ onSearch }) => {
   };
 
   return (
-    <div>
-      <div>
-        <span style={{ cursor: "pointer" }}>
-          <img
-            className="flex items-center w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6"
-            src="../../src/assets/images/icon_search.png"
-            alt="Icono de búsqueda"
-          />
-        </span>
-      </div>
+    <div className="flex w-11/12 items-center gap-2" >
+      
 
-      <div>
-        <input
-          type="text"
-          value={textInput}
-          onChange={handleChangeTexto}
-          placeholder=" Ingredient"
+      <input className="flex w-4/5 ring-green-300 ring-2 rounded-full px-4 py-2"
+        type="text"
+        value={textInput}
+        onChange={handleChangeTexto}
+        placeholder=" Ingredient"
+      />
+
+      <button className="flex" onClick={handleSearch}>
+      <span style={{ cursor: "pointer" }}>
+        <img
+          className="flex items-center w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6"
+          src="../../src/assets/images/icon_search.png"
+          alt="Icono de búsqueda"
         />
-        <button onClick={handleSearch}>Search</button>
-      </div>
+      </span>
+      </button>
     </div>
   );
 };
