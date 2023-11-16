@@ -27,19 +27,15 @@ const Recipe = () => {
     } else if (data){
       const meal=data.meals[0];
       const strIngredients = [];
-      const strMeasure=[];
     
 
       for(let i=1;i<=20;i++){
-        if (meal[`strIngredient${i}`]!==''){
-          strIngredients.push(meal[`strIngredient${i}`]);
-          strMeasure.push(meal[`strMeasure${i}`])
+        if (meal[`strIngredient${i}`]!==''&& meal[`strIngredient${i}`]!==null){
+          strIngredients.push({name:meal[`strIngredient${i}`], quantity: meal[`strMeasure${i}`]});
         }
       }
       
-      console.log(strIngredients,strMeasure);
-
-      
+      console.log(meal);
 
       return (
         <div className="flex flex-col items-center p-auto w-screen">
@@ -66,7 +62,7 @@ const Recipe = () => {
                 {strIngredients.map((ingredient) => 
                 (<li className={listText}>
                   <p>
-                    <span className={boldNumber}>1/4 </span> {ingredient}
+                    <span className={boldNumber}>{ingredient.quantity} </span> {ingredient.name}
                   </p>
                 </li>)) }
                 
