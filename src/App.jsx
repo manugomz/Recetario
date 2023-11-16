@@ -11,6 +11,7 @@ import InfoAbout from './containers/InfoAbout'
 import NotFound from './containers/NotFound'
 import Contacts from './containers/Contacts'
 import Results from './containers/Results'
+import RecipiesbyCategories from './containers/RecipiesbyCategories'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/about-us" element={<InfoAbout/>} />
         <Route path="/contact-us" element={<Contacts/>} />
         <Route path="/results" element={<Results/>} />
+        <Route path='/:strCategory' element={<RecipiesbyCategories/>}/>
       </Routes>
       <Footer/>
     </>
