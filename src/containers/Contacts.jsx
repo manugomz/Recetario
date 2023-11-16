@@ -9,7 +9,6 @@ function Contacts () {
                 <h1 className='font-Inter font-bold 
                              text-red-500 text-center text-sm 
                             h-6 p-6'>CONTACT US</h1>
-                <p className='font-Inter text-center pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione adipisci modi ex placeat voluptatem nesciunt iste? Placeat eaque dolore consequuntur distinctio repellendus voluptates itaque, reprehenderit, sint temporibus dicta maiores consectetur.</p>
             </div>
             
             <div className='flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 
