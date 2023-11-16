@@ -35,27 +35,20 @@ function Header({ titulo }) {
           <a href="/popular-categories">
             <li className="p-2 hover:text-green-300">Popular Categories</li>
           </a>
-          <a href="/about-us">
-            <li className="p-2 hover:text-green-300">About Us</li>
-          </a>
+          
         </ul>
       </nav>
       <div className="flex items-center justify-center gap-4 w-1/4">
         <SearchBtn />
 
-        <button
-          className="flex items-center bg-green-300  rounded-full px-4 py-2
-                                    h-1/6 min-w-[40%] 
-                                    hover:bg-green-500 hover:shadow-light"
-        >
-          <img
-            className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 "
-            src="../../src/assets/images/fi-rr-phone-call.png"
-          />
-          <div className="pl-2 pr-1 text-white text-base md:text-lg lg:text-xl font-semibold">
-            Contact
-          </div>
-        </button>
+        <a href="/contact-us">
+                    <button className='flex items-center bg-green-300  rounded-full px-4 py-2
+                                        h-1/6 w-[120%] min-w-[25%] 
+                                        hover:bg-green-500 hover:shadow-light'>
+                        <img className='w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 '  src='../../src/assets/images/fi-rr-phone-call.png'/>
+                        <div className='pl-2 pr-1 text-white text-base md:text-lg lg:text-xl font-semibold'>Contact</div>
+                    </button>
+                </a>
       </div>
     </header>
   );
