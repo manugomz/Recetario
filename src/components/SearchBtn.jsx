@@ -20,7 +20,7 @@ const SearchBtn = ({ onSearch }) => {
   };
 
   return (
-    <div className="flex w-11/12 items-center gap-2" >
+    <div className="flex w-full items-center gap-2" >
       
 
       <input className="flex w-4/5 ring-green-300 ring-2 rounded-full px-4 py-2"

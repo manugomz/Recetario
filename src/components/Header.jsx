@@ -41,7 +41,7 @@ function Header({ titulo }) {
           
         </ul>
       </nav>
-      <div className="flex items-center justify-center gap-4 w-1/4">
+      <div className="flex items-center justify-center gap-4 w-3/4 lg:w-1/4">
         <SearchBtn />
 
         <a href="/contact-us">
