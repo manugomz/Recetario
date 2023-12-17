@@ -18,7 +18,7 @@ function App() {
 
   return (
     <FavoritesProvider>
-      <Header titulo='ecetary.com'/>
+      <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/categories" element={<Categories/>} />

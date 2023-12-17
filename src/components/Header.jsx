@@ -1,57 +1,46 @@
 import React from "react";
 import SearchBtn from "./SearchBtn";
+import { Link } from "react-router-dom";
+import Navigation from "./Navigation";
 
-function Header({ titulo }) {
+function Header() {
   return (
-    <header
-      className="flex py-6 px-2 gap-2
+    <header className="flex py-6 px-2 gap-2
                             flex-col sm:flex-row 
                             justify-around items-center"
     >
       <div className="flex items-center pr-4">
-        <img
-          className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
-          src="../../src/assets/images/logoR.png"
-        />
-        <a
-          href="/"
-          className="font-semibold text-black text-base md:text-lg lg:text-xl font-Inter"
+        <Link
+          to="/"
+          className=" flex items-center font-semibold text-black text-base md:text-lg lg:text-xl font-Inter"
         >
-          {titulo}
-        </a>
+          <img
+            className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+            src="../../src/assets/images/logoR.png"
+          />
+          ecetary.com
+        </Link>
       </div>
-      <nav>
-        <ul
-          className="flex justify-around
-                            mx-auto px-2
-                            text-black text-base md:text-lg lg:text-xl font-semibold font-Inter"
-        >
-          <a href="/">
-            <li className="p-2 hover:text-green-300">Home</li>
-          </a>
-          <a href="/all-recipes">
-            <li className="p-2 hover:text-green-300">All Recipes</li>
-          </a>
-          <a href="/categories">
-            <li className="p-2 hover:text-green-300">Categories</li>
-          </a>
-          <a href="/about-us">
-            <li className="p-2 hover:text-green-300">About us</li>
-          </a>
-          
-        </ul>
-      </nav>
-      <div className="flex items-center justify-center gap-4 w-3/4 lg:w-1/4">
+      <Navigation />
+      <div className="flex flex-row justify-between px-5 lg:w-1/4">
         <SearchBtn />
-
-        <a href="/contact-us">
-                    <button className='flex items-center bg-green-300  rounded-full px-4 py-2
-                                        h-1/6 w-[120%] min-w-[25%] 
-                                        hover:bg-green-500 hover:shadow-light'>
-                        <img className='w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 '  src='../../src/assets/images/fi-rr-phone-call.png'/>
-                        <div className='pl-2 pr-1 text-white text-base md:text-lg lg:text-xl font-semibold'>Contact</div>
-                    </button>
-                </a>
+        <Link to="/contact-us" className="w-1/2">
+          <button
+            className="flex flex-row justify-between items-center
+                            bg-green-300  rounded-full w-[fit-content]
+                            px-4 py-2 
+                            hover:bg-green-500 hover:shadow-light"
+          >
+            <img
+              className="w-5 h-5 
+                        mr-2"
+              src="../../src/assets/images/fi-rr-phone-call.png"
+            />
+            <div className="text-white text-base md:text-lg lg:text-xl font-semibold">
+              Contact
+            </div>
+          </button>
+        </Link>
       </div>
     </header>
   );
