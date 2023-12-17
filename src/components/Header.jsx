@@ -16,7 +16,7 @@ function Header() {
         >
           <img
             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
-            src="./../../src/assets/images/logoR.png"
+            src="./../src/assets/images/logoR.png"
           />
           ecetary.com
         </Link>
@@ -34,7 +34,7 @@ function Header() {
             <img
               className="w-5 h-5 
                         mr-2"
-              src="../../src/assets/images/fi-rr-phone-call.png"
+              src="./../../src/assets/images/fi-rr-phone-call.png"
             />
             <div className="text-white text-base md:text-lg lg:text-xl font-semibold">
               Contact
