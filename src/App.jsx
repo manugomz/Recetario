@@ -20,14 +20,14 @@ function App() {
     <FavoritesProvider>
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/categories" element={<Categories/>} />
-        <Route path="/all-recipes" element={<AllRecipes/>} />
-        <Route path="/about-us" element={<InfoAbout/>} />
-        <Route path="/contact-us" element={<Contacts/>} />
-        <Route path="/recipe/:idMeal" element={<Recipe/>} />
-        <Route path="/results" element={<Results/>} />
-        <Route path='/:strCategory' element={<RecipiesbyCategories/>}/>
+        <Route path="/recetario/" element={<Home/>} />
+        <Route path="/recetario/categories" element={<Categories/>} />
+        <Route path="/recetario/all-recipes" element={<AllRecipes/>} />
+        <Route path="/recetario/about-us" element={<InfoAbout/>} />
+        <Route path="/recetario/contact-us" element={<Contacts/>} />
+        <Route path="/recetario/recipe/:idMeal" element={<Recipe/>} />
+        <Route path="/recetario/results" element={<Results/>} />
+        <Route path='/recetario/:strCategory' element={<RecipiesbyCategories/>}/>
         <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer/>
