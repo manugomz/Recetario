@@ -11,12 +11,12 @@ function Header() {
     >
       <div className="flex items-center pr-4">
         <Link
-          to="/"
+          to="/recetario/"
           className=" flex items-center font-semibold text-black text-base md:text-lg lg:text-xl font-Inter"
         >
           <img
             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
-            src="../../src/assets/images/logoR.png"
+            src="./../../src/assets/images/logoR.png"
           />
           ecetary.com
         </Link>
@@ -24,7 +24,7 @@ function Header() {
       <Navigation />
       <div className="flex flex-row justify-between px-5 lg:w-1/4">
         <SearchBtn />
-        <Link to="/contact-us" className="w-1/2">
+        <Link to="/recetario/contact-us" className="w-1/2">
           <button
             className="flex flex-row justify-between items-center
                             bg-green-300  rounded-full w-[fit-content]

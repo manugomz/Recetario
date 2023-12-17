@@ -21,16 +21,16 @@ function Navigation() {
         md:text-lg lg:text-xl
         "
         >
-          <Link to="/">
+          <Link to="/recetario/">
             <li className="p-2 hover:text-green-300">Home</li>
           </Link>
-          <Link to="/all-recipes">
+          <Link to="/recetario/all-recipes">
             <li className="p-2 hover:text-green-300">All Recipes</li>
           </Link>
-          <Link to="/categories">
+          <Link to="/recetario/categories">
             <li className="p-2 hover:text-green-300">Categories</li>
           </Link>
-          <Link to="/about-us">
+          <Link to="/recetario/about-us">
             <li className="p-2 hover:text-green-300">About us</li>
           </Link>
         </ul>
@@ -58,16 +58,16 @@ function Navigation() {
         md:text-lg lg:text-xl
         "
             >
-              <Link to="/">
+              <Link to="/recetario/">
                 <li className="p-2 hover:text-green-300">Home</li>
               </Link>
-              <Link to="/all-recipes">
+              <Link to="/recetario/all-recipes">
                 <li className="p-2 hover:text-green-300">All Recipes</li>
               </Link>
-              <Link to="/categories">
+              <Link to="/recetario/categories">
                 <li className="p-2 hover:text-green-300">Categories</li>
               </Link>
-              <Link to="/about-us">
+              <Link to="/recetario/about-us">
                 <li className="p-2 hover:text-green-300">About us</li>
               </Link>
             </ul>
