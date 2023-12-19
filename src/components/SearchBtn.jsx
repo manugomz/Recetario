@@ -31,7 +31,7 @@ const SearchBtn = ({ onSearch }) => {
       <button className="flex" onClick={handleSearch}>
         <img
           className="flex items-center w-6 h-6"
-          src="../../src/assets/images/icon_search.png"
+          src="/images/icon_search.png"
           alt="Icono de búsqueda"
         />
       </button>
