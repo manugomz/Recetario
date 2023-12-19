@@ -4,7 +4,7 @@ import SocialMediaIcons from './SocialMediaIcons';
 
 function Footer() {
     return (
-        <footer className='md:place-content-center lg:place-content-center border-x-4'>
+        <footer className='md:place-content-center lg:place-content-center px-4 pb-4'>
             <div className='container flex flex-col md:flex-row width-[100%] md:width-[100%] lg:width-[100%] 
                             md:gap-8 md:place-content-center lg:place-content-center py-10'>
                 <div className='width-[25%] md:width-[25%] lg:width-[25%]'>

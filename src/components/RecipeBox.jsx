@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function RecipeBox({ recipe }) {
   
-  let link=`/recipe/${recipe.idMeal}`
+  let link=`recetario/recipe/${recipe.idMeal}`
 
   return (
     <div
@@ -19,7 +19,7 @@ function RecipeBox({ recipe }) {
         <Link to={link}>
           <img
             className="self-center object-cover rounded-t-[2rem]"
-            src={recipe.strMealThumb}
+            src={"recetario/"+recipe.strMealThumb}
           />
         </Link>
       </div>

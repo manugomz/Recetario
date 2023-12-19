@@ -76,7 +76,7 @@ const Recipe = () => {
             </section>
             <img
               className="h-auto rounded-xl order-first md:order-none md:w-4/6 md:object-cover"
-              src={meal.strMealThumb}
+              src={"recetario/"+meal.strMealThumb}
             />
             </div>
               <h2 className=" mx-2 h-full pt-6 mb-5 font-bold">INSTRUCTIONS</h2>
