@@ -34,8 +34,6 @@ const Recipe = () => {
           strIngredients.push({name:meal[`strIngredient${i}`], quantity: meal[`strMeasure${i}`]});
         }
       }
-      
-      console.log(meal);
 
       return (
         <div className="flex flex-col items-center p-auto w-screen">
