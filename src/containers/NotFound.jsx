@@ -20,7 +20,7 @@ function NotFound() {
                             2xl:text-2xl'>The page you were looking for was not found</p>
             </div>
                 <img className='bg-cover 
-                xl:h-[40vh] xl:rounded-full' src="../src/assets/images/dishes.jpg" alt="Error 404" />
+                xl:h-[40vh] xl:rounded-full' src="./images/dishes.jpg" alt="Error 404" />
            
         </main>
     );
