@@ -30,11 +30,11 @@ function Footer() {
                         Useful links
                         </p>
                         <ul className='' >
-                            <a href="/categorias-populares"><li className='hover:text-green-300'
+                            <a href="/recetario/categories"><li className='hover:text-green-300'
                             >Popular Categories</li></a>
-                            <a href="/recetas-populares"><li className='hover:text-green-300'
-                            >Popular Ingredients</li></a>
-                            <a href="/"><li className='hover:text-green-300'>About Us</li></a> 
+                            <a href="/recetario/all-recipes"><li className='hover:text-green-300'
+                            >Recipes</li></a>
+                            <a href="/recetario/about-us"><li className='hover:text-green-300'>About Us</li></a> 
                         </ul> 
                     </div> 
                     <div className='width-[30%] md:width-[30%] lg:width-[30%]'>

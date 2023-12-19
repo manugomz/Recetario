@@ -15,7 +15,7 @@ function Home() {
         to your needs.
       </p>
           
-        <Link to="/all-recipes"
+        <Link to="./all-recipes"
         className="flex flex-col items-center px-4 py-5 bg-green-300  rounded-full h-1/6
                              hover:bg-green-500 text-white md:text-lg lg:text-xl font-semibold 
                              place-content-center place-self-start col-start-4 row-start-3 text-center

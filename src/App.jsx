@@ -25,9 +25,9 @@ function App() {
         <Route path="/recetario/all-recipes" element={<AllRecipes/>} />
         <Route path="/recetario/about-us" element={<InfoAbout/>} />
         <Route path="/recetario/contact-us" element={<Contacts/>} />
-        <Route path="/recetario/all-recipes/recipe/:idMeal" element={<Recipe/>} />
+        <Route path="/recetario/recipe/:idMeal" element={<Recipe/>} />
         <Route path="/recetario/results" element={<Results/>} />
-        <Route path='/recetario/categories/:strCategory' element={<RecipiesbyCategories/>}/>
+        <Route path='/recetario/:strCategory' element={<RecipiesbyCategories/>}/>
         <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer/>

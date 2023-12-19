@@ -16,12 +16,12 @@ function RecipeBox({ recipe }) {
     >
       <div className="w-full">
         <FavoriteButton idMeal={recipe.idMeal}/>
-        <Link to={link}>
+        <a href={link}>
           <img
             className="self-center object-cover rounded-t-[2rem]"
             src={recipe.strMealThumb}
           />
-        </Link>
+        </a>
       </div>
       <div className="pl-6 pt-2">
         <h2 className="font-Inter font-semibold mt-1">{recipe.strMeal}</h2>
