@@ -31,7 +31,7 @@ const HandleRecipeList = ({currentLetter}) => {
         return (<div>
             <div className='flex flex-col md:flex-row justify-center items-center mt-5'>
             <a className='text-gray-200' href="https://www.freepik.com/free-photo/cutlery-overhead-wooden-dining-food_1090334.htm#query=empty%20plate&position=4&from_view=keyword&track=ais">
-                <img className='md:max-h-28 mr-2' src='src="../../src/assets/images/empty-plate.png'></img>
+                <img className='md:max-h-28 mr-2' src='/images/empty-plate.png'></img>
             </a>
                 <div className='text-2xl font-Inter pt-2 text-center'>No meals found here</div>
             </div>
