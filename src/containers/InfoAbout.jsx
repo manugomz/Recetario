@@ -13,15 +13,15 @@ function InfoAbout () {
                     <div className='flex flex-row justify-center'>
                        <img className='rounded-e-full border-8 border-green-100
                                         h-40  md:max-w-xs lg:max-w-sm xl:max-w-md mx-3 my-2' 
-                            src="../../src/assets/images/Manuela.jpeg" 
+                            src="./images/Manuela.jpeg" 
                             alt="Manuela" />
                        <img className='rounded-full border-8 border-green-100 
                                         h-40  md:max-w-xs lg:max-w-sm xl:max-w-md mx-5 my-2 ' 
-                            src="../../src/assets/images/Adriana.jpeg" 
+                            src="./images/Adriana.jpeg" 
                             alt="Adriana" />
                        <img className='rounded-s-full border-8 border-green-100 
                                         h-40  md:max-w-xs lg:max-w-sm xl:max-w-md mx-3 my-2' 
-                            src="../../src/assets/images/Natalia.jpg" 
+                            src="./images/Natalia.jpg" 
                             alt="Natalia" />
                     </div>
                     <div className='pt-8 mx-6'>

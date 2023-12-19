@@ -10,7 +10,7 @@ function Footer() {
                 <div className='width-[25%] md:width-[25%] lg:width-[25%]'>
                     <div className='flex justify-center'>
                         <img className='w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12' 
-                        src='/images/logoR.png'/>
+                        src='./images/logoR.png'/>
                         <a href='' className='font-semibold text-black self-center
                                             text-base md:text-lg lg:text-xl font-Inter'>ecetary.com</a> 
                     </div>
