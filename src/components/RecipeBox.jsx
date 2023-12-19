@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function RecipeBox({ recipe }) {
   
-  let link=`recipe/${recipe.idMeal}`
+  let link=`./recipe/${recipe.idMeal}`
 
   return (
     <div
