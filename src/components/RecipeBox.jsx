@@ -19,7 +19,7 @@ function RecipeBox({ recipe }) {
         <Link to={link}>
           <img
             className="self-center object-cover rounded-t-[2rem]"
-            src={"recetario/"+recipe.strMealThumb}
+            src={recipe.strMealThumb}
           />
         </Link>
       </div>
