@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 function CategoriesBox({data}){ 
-    let link =`/${data.strCategory}`
+    let link =`recetario/${data.strCategory}`
   
     return(
         <div>
