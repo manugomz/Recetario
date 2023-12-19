@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Mujer from "./images/Mujer.png"
 
 function Home() {
   return (
@@ -29,7 +30,7 @@ function Home() {
                             md:w-11/12 md:h-11/12 xl:w-9/12 xl:h-9/12 ">
         <img
           className="absolute pl-6 pt-14 "
-          src="/images/Circulo_verde.png"/>
+          src="recetario/images/Circulo_verde.png"/>
         <img
           className="absolute pb-12 md:border-b-12 xl:pb-32"
           src="./images/Mujer.png"
