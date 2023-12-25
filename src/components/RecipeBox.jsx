@@ -3,8 +3,6 @@ import FavoriteButton from "./FavoriteButton";
 import { Link } from "react-router-dom";
 
 function RecipeBox({ recipe }) {
-  
-  let link=`recipe/${recipe.idMeal}`
 
   return (
     <div
@@ -16,12 +14,12 @@ function RecipeBox({ recipe }) {
     >
       <div className="w-full">
         <FavoriteButton idMeal={recipe.idMeal}/>
-        <a href={link}>
+        <Link to={`/recipe/${recipe.idMeal}`}>
           <img
             className="self-center object-cover rounded-t-[2rem]"
             src={recipe.strMealThumb}
           />
-        </a>
+        </Link>
       </div>
       <div className="pl-6 pt-2">
         <h2 className="font-Inter font-semibold mt-1">{recipe.strMeal}</h2>
