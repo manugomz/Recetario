@@ -13,8 +13,8 @@ function Home() {
           All your recipes in one place
         </h1>
         <p
-          className="p-3 pb-8 place-self-center 
-                    md:place-self-start">
+          className="p-3 pb-8 place-self-center text-center
+                    xl:text-2xl">
           Make the most of the ingredients in your fridge with recipes that adapt
           to your needs.
         </p>
@@ -23,7 +23,7 @@ function Home() {
                     hover:bg-green-500 text-white font-semibold 
                     place-self-center 
                     md:text-lg md:self-center
-                    lg:text-xl" >
+                    lg:text-2xl" >
           Starts now
         </Link>
       </div>
