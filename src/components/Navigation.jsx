@@ -9,7 +9,6 @@ function Navigation() {
 
   const handleMenu = () => {
     setOpen((prev) => !prev);
-    console.log(open);
   };
 
   return (

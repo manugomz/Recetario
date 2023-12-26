@@ -5,7 +5,6 @@ function CategoriesBox({data}){
 
     return(
         <div>
-            
                 <Link to={`/${data.strCategory}`} className='flex flex-col justify-around items-center
                 rounded-2xl shadow-2xl shadow-green-200 p-4 h-48
                 bg-center  aspect-square [&>div]:hover:bg-green-500'>
@@ -14,8 +13,6 @@ function CategoriesBox({data}){
                     </div>
                     <h2 className='text-center font-semibold font-Inter mt-2.5'>{data.strCategory}</h2>
                 </Link>
-           
-            
         </div>
         
     );
