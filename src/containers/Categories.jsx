@@ -9,9 +9,10 @@ function Categories(){
     return(
         <section>
             <h2 className='font-Inter font-bold 
-                        text-red-500 text-center text-xs'>CUSTOMER FAVORITES</h2>
-            <h1 className='font-extrabold text-4xl font-Inter text-center mb-5'>Categories</h1>
-            <div className='flex flex-wrap justify-around lg:mx-5 p-8 lg:px-20 w-screen'>
+                        text-red-500 text-center text-xs lg:text-base'>CUSTOMER FAVORITES</h2>
+            <h1 className='font-extrabold text-4xl font-Inter text-center mb-5 xl:text-6xl'>Categories</h1>
+            <div className='flex flex-wrap justify-around w-screen h-full
+            lg:mx-5 p-8 lg:px-20'>
                 {
                     data.categories && (data.categories.map((data) => <CategoriesBox data={data} key={data.idCategory}/> ))
                 }

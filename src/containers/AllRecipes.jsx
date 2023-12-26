@@ -14,10 +14,13 @@ function AllRecipes() {
     return (
         <section>
             <h2 className="font-Inter font-bold 
-                         text-red-500 text-center text-xs">SPECIAL DISHES</h2>
+                         text-red-500 text-center text-xs
+                         lg:text-base">SPECIAL DISHES</h2>
             <h1 className=' font-Inter font-extrabold text-4xl 
             text-center 
-            mx-5 mb-5 '>All recipes</h1>
+            mx-5 mb-5 
+            xl:text-6xl
+            '>All recipes</h1>
             <LettersBar handleSelectLetter={handleSelectLetter}/>
             <HandleRecipeList currentLetter={currentLetter}/> 
         </section>

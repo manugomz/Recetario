@@ -1,21 +1,26 @@
 import React from 'react';
 import SocialMediaIcons from './SocialMediaIcons';
-
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
         <footer className='md:place-content-center lg:place-content-center px-4 pb-4'>
-            <div className='container flex flex-col md:flex-row width-[100%] md:width-[100%] lg:width-[100%] 
-                            md:gap-8 md:place-content-center lg:place-content-center py-10'>
-                <div className='width-[25%] md:width-[25%] lg:width-[25%]'>
+            <div className='container flex flex-col md:flex-row w-full
+                            md:gap-8 md:place-content-center 
+                            lg:place-content-center pt-10 pb-5'>
+                <div className='w-full md:w-1/4'>
                     <div className='flex justify-center'>
-                        <img className='w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12' 
+                        <img className='w-8 h-8 
+                        md:w-10 md:h-10 
+                        lg:w-12 lg:h-12' 
                         src='./images/logoR.png'/>
                         <a href='' className='font-semibold text-black self-center
                                             text-base md:text-lg lg:text-xl font-Inter'>ecetary.com</a> 
                     </div>
-                    <div className='text-center justify-items-center py-3 px-4
-                                    text-black text-sm md:text-base lg:text-lg font-Inter'>
+                    <div className='text-center justify-items-center font-Inter py-3 px-4
+                                    text-black text-sm 
+                                    md:text-base 
+                                    lg:text-lg '>
                         Savor the artistry where every dish is a culinary masterpiece
                     </div>
                     <div className='pb-4'>
@@ -25,29 +30,29 @@ function Footer() {
                 <div className='flex place-content-between py-2 px-6 gap-2 font-Inter 
                                 md:gap-8 lg:gap-16  
                                 text-base md:text-lg lg:text-xl'>
-                    <div className='width-[30%] md:width-[30%] lg:width-[30%]'>
+                    <div className='w-1/3'>
                         <p className='font-semibold pb-4'>
                         Useful links
                         </p>
                         <ul className='' >
-                            <a href="/categories"><li className='hover:text-green-300'
-                            >Popular Categories</li></a>
-                            <a href="/all-recipes"><li className='hover:text-green-300'
-                            >Recipes</li></a>
-                            <a href="/about-us"><li className='hover:text-green-300'>About Us</li></a> 
+                            <Link to="/categories"><li className='hover:text-green-300'
+                            >Categories</li></Link>
+                            <Link to="/all-recipes"><li className='hover:text-green-300'
+                            >Recipes</li></Link>
+                            <Link to="/about-us"><li className='hover:text-green-300'>About Us</li></Link> 
                         </ul> 
                     </div> 
-                    <div className='width-[30%] md:width-[30%] lg:width-[30%]'>
+                    <div className='w-1/3'>
                         <p className='font-semibold pb-4'>
                         Main Menu
                         </p>
                         <ul className='' >
-                            <a href="/"><li className='hover:text-green-300'>Home</li></a>
-                            <a href="/"><li className='hover:text-green-300'>Offers</li></a>
-                            <a href="/"><li className='hover:text-green-300'>Menus</li></a> 
+                            <Link href="/"><li className='hover:text-green-300'>Home</li></Link>
+                            <Link to="/"><li className='hover:text-green-300'>Offers</li></Link>
+                            <Link to="/"><li className='hover:text-green-300'>Menus</li></Link> 
                         </ul> 
                     </div>        
-                    <div className='width-[30%] md:width-[30%] lg:width-[30%]'>
+                    <div className='w-1/3'>
                         <p className='font-semibold pb-4'>
                         Contact Us
                         </p>
@@ -56,7 +61,9 @@ function Footer() {
                     </div> 
                 </div>  
             </div>
-            <p className='font-Inter text-center text-base md:text-lg lg:text-xl '>
+            <p className='font-Inter text-center text-base 
+                        md:text-lg 
+                        lg:text-xl'>
                 Copyright 2023 Be-Chotas | All rights reserved
             </p>  
         </footer>
