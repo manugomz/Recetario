@@ -9,7 +9,8 @@ function InfoAbout () {
                         '>ABOUT US</h1>
             <h2 className='font-Inter font-extrabold 
                         text-center text-xl pt-2 pb-5 px-4
-                        xl:text-6xl
+                        lg:text-3xl
+                        2xl:text-6xl
                         '>The only thing we are serious about is food.</h2>
             <div className=''>
                 <div className='flex flex-col justify-center items-center'>
