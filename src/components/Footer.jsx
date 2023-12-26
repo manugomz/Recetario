@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialMediaIcons from './SocialMediaIcons';
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -30,11 +31,11 @@ function Footer() {
                         Useful links
                         </p>
                         <ul className='' >
-                            <a href="/categories"><li className='hover:text-green-300'
-                            >Popular Categories</li></a>
-                            <a href="/all-recipes"><li className='hover:text-green-300'
-                            >Recipes</li></a>
-                            <a href="/about-us"><li className='hover:text-green-300'>About Us</li></a> 
+                            <Link to="/categories"><li className='hover:text-green-300'
+                            >Categories</li></Link>
+                            <Link to="/all-recipes"><li className='hover:text-green-300'
+                            >Recipes</li></Link>
+                            <Link to="/about-us"><li className='hover:text-green-300'>About Us</li></Link> 
                         </ul> 
                     </div> 
                     <div className='width-[30%] md:width-[30%] lg:width-[30%]'>
@@ -42,9 +43,9 @@ function Footer() {
                         Main Menu
                         </p>
                         <ul className='' >
-                            <a href="/"><li className='hover:text-green-300'>Home</li></a>
-                            <a href="/"><li className='hover:text-green-300'>Offers</li></a>
-                            <a href="/"><li className='hover:text-green-300'>Menus</li></a> 
+                            <Link href="/"><li className='hover:text-green-300'>Home</li></Link>
+                            <Link to="/"><li className='hover:text-green-300'>Offers</li></Link>
+                            <Link to="/"><li className='hover:text-green-300'>Menus</li></Link> 
                         </ul> 
                     </div>        
                     <div className='width-[30%] md:width-[30%] lg:width-[30%]'>
