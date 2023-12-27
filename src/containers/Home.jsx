@@ -24,7 +24,7 @@ function Home() {
                     place-self-center 
                     md:text-lg md:self-center
                     lg:text-2xl" >
-          Starts now
+          Start now
         </Link>
       </div>
       
