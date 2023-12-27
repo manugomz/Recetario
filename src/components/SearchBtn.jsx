@@ -20,19 +20,21 @@ const SearchBtn = ({ onSearch }) => {
   };
 
   return (
-    <div className="flex items-center gap-2">
-      <input className="flex w-2/3 ring-green-300 ring-2 rounded-full px-4 py-2"
+    <div className="flex flex-row justify-center lg:justify-end w-2/3 md:w-1/3 lg:w-1/4 xl:max-w-[30vw]">
+      <input className="flex ring-green-300 ring-2 rounded-full 
+                        w-[70%]
+                        px-4 py-2"
         type="text"
         value={textInput}
         onChange={handleChangeTexto}
         placeholder=" Ingredient"
       />
 
-      <button className="flex" onClick={handleSearch}>
+      <button onClick={handleSearch}>
         <img
-          className="flex items-center w-6 h-6"
+          className="flex items-center w-6 h-6 ml-2"
           src="./images/icon_search.png"
-          alt="Icono de búsqueda"
+          alt="Ícono de búsqueda"
         />
       </button>
     </div>
