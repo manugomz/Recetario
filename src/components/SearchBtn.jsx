@@ -11,8 +11,12 @@ const SearchBtn = ({ onSearch }) => {
 
   const handleSearch = () => {
     onSearch = textInput.trim();
-    // Navegar a la vista de resultados después de la búsqueda
-    navigate("/results", {
+
+    if(onSearch===''){
+      navigate('')
+    }
+
+    navigate(`/results?${onSearch}`, { // Navegar a la vista de resultados después de la búsqueda
       state: {
         meals: textInput,
       },
