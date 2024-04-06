@@ -29,7 +29,7 @@ function RecipiesbyCategories() {
     let categoryRecipeList = data.meals;
 
     return (
-      <div>
+      <section className="shadow-xl">
         <h1
           className="font-Inter font-bold 
                     text-red-500 text-center text-xs"
@@ -42,7 +42,7 @@ function RecipiesbyCategories() {
               <RecipeBox recipe={recipe} key={recipe.strMeal} />
             ))}
         </div>
-      </div>
+      </section>
     );
   }
 }

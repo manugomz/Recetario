@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="w-full px-5 mt-5 font-Inter flex flex-col
+    <main className="w-full px-5 py-8 font-Inter flex flex-col
+                    shadow-xl
                     md:flex-row md:justify-around md:justify-items-center">
       <div className="pb-5 flex flex-col md:justify-center
                     md:w-1/2">
@@ -40,7 +41,7 @@ function Home() {
           src="./images/Mujer.png"
         />
       </div>
-    </div>
+    </main>
   );
 }
 

@@ -16,7 +16,7 @@ function ContactUs() {
 
       <div
         className="flex flex-col md:flex-row md:items-center md:justify-center
-                    rounded-xl shadow-lg justify-around md:gap-14
+                    rounded-xl shadow-xl justify-around md:gap-14
                     px-8"
       >
         <div className="md:p-8 self-center md:mb-14">

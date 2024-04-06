@@ -9,7 +9,7 @@ function InfoAbout() {
   };
 
   return (
-    <section>
+    <main className="shadow-xl pb-8">
       <h2
         className="font-Inter font-bold 
         text-red-500 text-center text-xs
@@ -88,7 +88,7 @@ function InfoAbout() {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 }
 

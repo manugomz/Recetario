@@ -7,7 +7,7 @@ function Categories(){
     
 
     return(
-        <section>
+        <section className='shadow-xl'>
             <h2 className='font-Inter font-bold 
                         text-red-500 text-center text-xs lg:text-base'>CUSTOMER FAVORITES</h2>
             <h1 className='font-extrabold text-4xl font-Inter text-center mb-5 

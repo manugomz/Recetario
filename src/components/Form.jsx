@@ -7,7 +7,7 @@ function Forms() {
   const [area, setArea] = useState("");
 
   return (
-    <div className="rounded-2xl shadow-xl shadow-green-300 p-5 mb-10 md:w-80">
+    <div className="rounded-2xl shadow-lg shadow-green-300 p-5 mb-10 md:w-80">
       <form action="" className="flex flex-col space-y-4">
         <label className="form-label text-sm font-Inter">Name</label>
         <input

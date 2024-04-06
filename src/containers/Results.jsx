@@ -45,7 +45,7 @@ const Results = () => {
   }, [searchResults]);
 
   return (
-    <div>
+    <section className="shadow-xl pb-5">
       <h1
         className="font-Inter font-extrabold text-2xl 
                   text-center 
@@ -66,7 +66,7 @@ const Results = () => {
           <p className="text-center">Oops! It seems we didin't find any recipes that matched your search</p>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

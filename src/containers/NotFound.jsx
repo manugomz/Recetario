@@ -3,7 +3,7 @@ import React from 'react';
 
 function NotFound() {
     return (
-        <main className='relative xl:mx-40 my-5'>
+        <main className='relative xl:mx-40 my-5 shadow-xl'>
              <div className='flex flex-col absolute right-0 w-1/2 h-1/3 justify-center
                             md:pr-5 md:pt-4
                             xl:h-[40vh] xl:w-1/2
