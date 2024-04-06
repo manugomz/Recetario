@@ -36,9 +36,7 @@ function Navigation() {
         </ul>
       </nav>
       <div className="lg:hidden order-last z-20">
-        <button
-          onClick={handleMenu}
-        >
+        <button onClick={handleMenu}>
           <span className="sr-only">Open Main Menu</span>
           {open === false ? (
             <LuMenu className="w-8 h-7 text-black hover:text-green-300" />
@@ -49,9 +47,11 @@ function Navigation() {
       </div>
       {/*Mobile menu 16:55 */}
       {open ? (
-        <div className="absolute top-0 left-0
+        <div
+          className="absolute top-0 left-0
                       bg-white pb-2 z-10 w-full shadow-lg
-                      md:hidden">
+                      md:hidden"
+        >
           <nav className="px-2 pt-6 w-full pb-3 sm:px-3 ">
             <ul
               className="flex flex-col justify-around text-center items-center
@@ -71,7 +71,7 @@ function Navigation() {
                 <li className="p-2 hover:text-green-300">About us</li>
               </Link>
               <Link to="/contact-us">
-                <ContactButton/>
+                <ContactButton />
               </Link>
             </ul>
           </nav>

@@ -58,7 +58,7 @@ const Recipe = () => {
               <h2 className="mb-5 font-bold">INGREDIENTS</h2>
               <ul className="flex-col ml-2">
                 {strIngredients.map((ingredient) => 
-                (<li className={listText}>
+                (<li className={listText} key={ingredient.quantity+ingredient.name}>
                   <p>
                     <span className={boldNumber}>{ingredient.quantity} </span> {ingredient.name}
                   </p>

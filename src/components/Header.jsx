@@ -6,32 +6,36 @@ import ContactButton from "./ContactButton";
 
 function Header() {
   return (
-    <header className="flex flex-row
+    <header
+      className="flex flex-row
                       py-6 px-8
                       justify-between items-center"
     >
-      <div className="flex items-center pr-4"> {// LOGO//
-      }
-        <Link
-          to="/"
-          className=" flex items-center"
-        >
+      <div className="flex items-center pr-4">
+        {" "}
+        {
+          // LOGO//
+        }
+        <Link to="/" className=" flex items-center">
           <img
             className="w-8 h-8 
                       md:w-10 md:h-10 
                       lg:w-12 lg:h-12"
             src="./images/logoR.png"
           />
-          <p className="font-semibold font-Inter text-black text-base hidden md:flex
+          <p
+            className="font-semibold font-Inter text-black text-base hidden md:flex
                         md:text-lg 
-                        lg:text-xl" 
-          >ecetary.com</p>
+                        lg:text-xl"
+          >
+            ecetary.com
+          </p>
         </Link>
       </div>
       <Navigation />
       <SearchBtn />
       <Link to="/contact-us" className="hidden lg:flex">
-        <ContactButton/>
+        <ContactButton />
       </Link>
     </header>
   );
