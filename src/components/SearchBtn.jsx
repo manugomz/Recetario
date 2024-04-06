@@ -13,7 +13,9 @@ const SearchBtn = ({ onSearch }) => {
     onSearch = textInput.trim();
 
     if(onSearch===''){
-      navigate('')
+      navigate('/',),{
+        
+      }
     }
 
     navigate(`/results?${onSearch}`, { // Navegar a la vista de resultados después de la búsqueda

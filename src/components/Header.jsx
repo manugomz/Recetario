@@ -8,14 +8,10 @@ function Header() {
   return (
     <header
       className="flex flex-row
-                      py-6 px-8
-                      justify-between items-center"
+                py-6 px-8
+                justify-between items-center"
     >
       <div className="flex items-center pr-4">
-        {" "}
-        {
-          // LOGO//
-        }
         <Link to="/" className=" flex items-center">
           <img
             className="w-8 h-8 

@@ -8,7 +8,7 @@ import Categories from './containers/Categories'
 import AllRecipes from './containers/AllRecipes'
 import InfoAbout from './containers/InfoAbout'
 import NotFound from './containers/NotFound'
-import Contacts from './containers/Contacts'
+import ContactUs from './containers/ContactUs'
 import Recipe from './containers/Recipe'
 import FavoritesProvider from './context/FavoritesProvider'
 import Results from './containers/Results'
@@ -24,7 +24,7 @@ function App() {
         <Route path="/categories" element={<Categories/>} />
         <Route path="/all-recipes" element={<AllRecipes/>} />
         <Route path="/about-us" element={<InfoAbout/>} />
-        <Route path="/contact-us" element={<Contacts/>} />
+        <Route path="/contact-us" element={<ContactUs/>} />
         <Route path="/recipe/:idMeal" element={<Recipe/>} />
         <Route path="/results" element={<Results/>} />
         <Route path='/:strCategory' element={<RecipiesbyCategories/>}/>

@@ -1,6 +1,7 @@
 import React from 'react';
-import SocialMediaIcons from './SocialMediaIcons';
 import { Link } from 'react-router-dom';
+import { SlSocialFacebook, SlSocialTwitter } from "react-icons/sl";
+import { SlSocialInstagram } from "react-icons/sl";
 
 function Footer() {
     return (
@@ -23,8 +24,10 @@ function Footer() {
                                     lg:text-lg '>
                         Savor the artistry where every dish is a culinary masterpiece
                     </div>
-                    <div className='pb-4'>
-                        <SocialMediaIcons/>       
+                    <div className='flex justify-center gap-2 pb-4'>
+                        <SlSocialFacebook className="text-xl hover:scale-125 hover:text-green-300 cursor-pointer"/> 
+                        <SlSocialInstagram className="text-xl hover:scale-125 hover:text-green-300 cursor-pointer"/> 
+                        <SlSocialTwitter className="text-xl hover:scale-125 hover:text-green-300 cursor-pointer ml-1"/> 
                     </div>                
                 </div >
                 <div className='flex place-content-between py-2 px-6 gap-2 font-Inter 

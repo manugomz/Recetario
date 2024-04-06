@@ -36,7 +36,7 @@ function RecipiesbyCategories() {
         >
           RECIPIES BY CATEGORIES
         </h1>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           {categoryRecipeList &&
             categoryRecipeList.map((recipe) => (
               <RecipeBox recipe={recipe} key={recipe.strMeal} />
