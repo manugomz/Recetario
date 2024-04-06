@@ -57,7 +57,7 @@ function InfoAbout() {
             </p>
           </div>
           <div
-            className="grid grid-cols-3 px-5 pt-3
+            className="grid grid-cols-3 px-5 pt-3 w-full
                         md:pt-5
                         lg:w-5/6"
           >
