@@ -17,16 +17,16 @@ In this website users can find a variety of recpies filtered by their initial le
 
 ## Features
 
-- Website created fetching a free access API with 302 recipes.
+- Website created fetching a free access API with 302 recipes, [The Meal DataBase](https://www.themealdb.com/api.php).
 - All recipes ordered by name, each one has acces to a video tutorial and redirection to a page with the list of ingredientes, quantities and process.
 - Categories tab, where you can look for a recipe based on its category.
-- Contact page, whre you could fill up a form to get in touch with us.
-- Searchbar, where you can look for a recipe based on the main ingredient. Ex: "chicken"
+- Contact page, fill up the form to get in touch with us!
+- Searchbar,you can look for a recipe based on the main ingredient. Ex: "chicken"
 - Responsive design for seamless use on various devices.
 
 ## Demo
 
-A live demo of the application can be found [here](https://manugomz.github.io/recetario/).
+A live demo of the application can be found [here](https://recetario-gmz.vercel.app/).
 
 ## Usage
 
