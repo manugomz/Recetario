@@ -14,7 +14,7 @@ function Footer() {
         className="flex flex-col md:flex-row
                   pt-5 pb-2"
       >
-        <div className="w-5/12">
+        <div className="md:w-5/12">
           <div className="flex justify-center">
             <img
               className="w-8 h-8 
@@ -46,10 +46,10 @@ function Footer() {
         </div>
         <div
           className="flex flex-col md:flex-row py-2 font-Inter 
-                    md:justify-around items-start text-center w-7/12
+                    md:justify-around items-start text-center md:w-7/12
                                 md:text-lg lg:text-xl"
         >
-          <div>
+          <div className="self-center">
             <p className={styles.title}>Useful links</p>
             <ul className={styles.list}>
               <Link to="/categories">
@@ -63,7 +63,7 @@ function Footer() {
               </Link>
             </ul>
           </div>
-          <div>
+          <div className="self-center">
             <p className={styles.title}>Main Menu</p>
             <ul className={styles.list}>
               <Link href="/">
@@ -77,7 +77,7 @@ function Footer() {
               </Link>
             </ul>
           </div>
-          <div>
+          <div className="self-center">
             <p className={styles.title}>Contact Us</p>
             <div className={styles.list}>
               <p className="">+64 958 248966</p>

@@ -10,7 +10,7 @@ function RecipeBox({ recipe }) {
       className="relative flex flex-col justify-around 
         min-w-[250px] max-w-[18rem] aspect-square 
         shadow-xl rounded-[2.5rem] 
-        m-5 pb-5
+        m-5 pb-5 mb-8
         2xl:max-w-sm"
     >
       <div className="w-full">
