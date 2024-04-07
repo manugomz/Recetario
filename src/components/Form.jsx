@@ -47,8 +47,8 @@ function Forms() {
 
         <button
           className="btn btn-warning inline-blok self-end bg-green-500
-                         text-white font-Inter font-bold uppercase text-sm
-                         rounded-lg px-6 py-2"
+                        text-white font-Inter font-bold uppercase text-sm
+                        rounded-lg px-6 py-2"
         >
           Send
         </button>

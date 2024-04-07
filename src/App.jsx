@@ -13,6 +13,7 @@ import Recipe from './containers/Recipe'
 import FavoritesProvider from './context/FavoritesProvider'
 import Results from './containers/Results'
 import RecipiesbyCategories from './containers/RecipiesbyCategories'
+import Favorites from './containers/Favorites'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs/>} />
         <Route path="/recipe/:idMeal" element={<Recipe/>} />
         <Route path="/results" element={<Results/>} />
+        <Route path="/favorites" element={<Favorites/>} />
         <Route path='/:strCategory' element={<RecipiesbyCategories/>}/>
         <Route path="*" element={<NotFound/>} />
       </Routes>

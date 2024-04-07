@@ -1,6 +1,7 @@
-import { FaStar } from "react-icons/fa6";
-import FavoriteButton from "./FavoriteButton";
+import { FaStar, FaYoutube } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+
+import FavoriteButton from "./FavoriteButton";
 
 function RecipeBox({ recipe }) {
 
@@ -13,7 +14,7 @@ function RecipeBox({ recipe }) {
         2xl:max-w-sm"
     >
       <div className="w-full">
-        <FavoriteButton idMeal={recipe.idMeal}/>
+        <FavoriteButton  recipe={recipe}/>
         <Link to={`/recipe/${recipe.idMeal}`}>
           <img
             className="self-center object-cover rounded-t-[2rem]"
@@ -26,10 +27,10 @@ function RecipeBox({ recipe }) {
         <a
           className="font-Inter text-gray-700 font-medium"
           href={recipe.strYoutube}>
-          Video
+          <FaYoutube className="inline text-2xl"/> Video 
         </a>
         <div className="flex justify-around pb-2">
-            <p className="font-Inter">90 min</p>
+            <Link to={'/'+recipe.strCategory} className="font-Inter">{recipe.strCategory}</Link>
             <div className="flex items-center">
                 <p className="font-Inter pr-1">4.5 </p>
                 <FaStar className="w-5 h-5" color="#FFE605" size={20} />

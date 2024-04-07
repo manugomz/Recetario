@@ -3,10 +3,11 @@ import React, { createContext, useState, useEffect } from "react";
 export const FavoritesContext = createContext();
 
 const FavoritesProvider = ({ children }) => {
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState({});
 
   useEffect(() => {
-    const storedFavorites = JSON.parse(localStorage.getItem("favorites"));
+
+  const storedFavorites = JSON.parse(localStorage.getItem("favorites"));
     if (storedFavorites) {
       setFavorites(storedFavorites);
     }
@@ -16,17 +17,21 @@ const FavoritesProvider = ({ children }) => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
 
-  const addFavorite = (id) => {
-    setFavorites([...favorites, id]);
+  const addFavorite = (recipe) => {
+    setFavorites({
+      ...favorites,
+      [recipe.idMeal]: recipe 
+  });
   };
 
-  const removeFavorite = (id) => {
-    const newFavorites = favorites.filter((fav) => fav !== id);
+  const isFavorite = (recipe) => {
+    return favorites.hasOwnProperty(recipe.idMeal)
+    
+  };
+
+  const removeFavorite = (recipe) => {
+    const newFavorites= delete favorites[recipe.idMeal];
     setFavorites(newFavorites);
-  };
-
-  const isFavorite = (id) => {
-    return favorites.some((fav) => fav === id);
   };
 
   return (

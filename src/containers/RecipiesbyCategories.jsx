@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import RecipeBox from "../components/RecipeBox";
 import useFetch from "../hooks/useFetch";
 import { useParams } from "react-router-dom";
+
+import RecipeBox from "../components/RecipeBox";
 
 function RecipiesbyCategories() {
   const { strCategory } = useParams();
@@ -30,12 +31,14 @@ function RecipiesbyCategories() {
 
     return (
       <section className="shadow-xl">
-        <h1
+        <h1 className="font-Inter font-bold 
+                      text-center text-xl">{strCategory}</h1>
+        <h2
           className="font-Inter font-bold 
                     text-red-500 text-center text-xs"
         >
           RECIPIES BY CATEGORIES
-        </h1>
+        </h2>
         <div className="flex flex-wrap justify-center">
           {categoryRecipeList &&
             categoryRecipeList.map((recipe) => (

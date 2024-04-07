@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
+import FavoriteRecipes from "../components/FavoriteRecipes";
 import HandleRecipeList from "../components/HandleRecipeList";
 import LettersBar from "../components/LettersBar";
 
@@ -31,7 +32,7 @@ function AllRecipes() {
         All recipes
       </h1>
       <LettersBar handleSelectLetter={handleSelectLetter} />
-      
+      <FavoriteRecipes/>
       <HandleRecipeList currentLetter={currentLetter} />
     </section>
   );

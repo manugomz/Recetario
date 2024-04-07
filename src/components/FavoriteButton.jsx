@@ -3,14 +3,14 @@ import { HiOutlineHeart } from "react-icons/hi";
 
 import useFavoriteContext from "../hooks/useFavoriteContext";
 
-const FavoriteButton = ({ idMeal }) => {
+const FavoriteButton = ({ recipe }) => {
   
   const { isFavorite, addFavorite, removeFavorite } = useFavoriteContext();
 
-  const isFavoriteMeal = isFavorite(idMeal);
+  const isFavoriteMeal = isFavorite(recipe);
 
   const handleFavoriteToggle = () => {
-    isFavoriteMeal ? removeFavorite(idMeal) : addFavorite(idMeal);
+    isFavoriteMeal ? removeFavorite(recipe) : addFavorite(recipe);
   };
 
   const style=`flex items-center absolute top-0 right-0
