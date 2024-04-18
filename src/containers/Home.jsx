@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <main>
       <section
         className="w-full px-5 py-8 font-Inter flex flex-col
-                    shadow-xl
                     md:flex-row md:justify-around md:justify-items-center"
       >
         <div
@@ -50,7 +48,6 @@ function Home() {
           <img className="absolute bottom-0 pr-2 " src="./images/Mujer.png" />
         </div>
       </section>
-    </main>
   );
 }
 

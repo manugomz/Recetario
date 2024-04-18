@@ -9,7 +9,7 @@ function InfoAbout() {
   };
 
   return (
-    <main className="shadow-xl pb-8">
+    <main className="pb-8">
       <h2
         className="font-Inter font-bold 
         text-red-500 text-center text-xs

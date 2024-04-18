@@ -9,7 +9,7 @@ function Categories() {
   );
 
   return (
-    <section className="shadow-xl">
+    <section >
       <h2
         className="font-Inter font-bold 
                         text-red-500 text-center text-xs lg:text-base"

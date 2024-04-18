@@ -5,11 +5,12 @@ import { SlSocialInstagram } from "react-icons/sl";
 
 function Footer() {
   const styles = {
-    title: `font-semibold md:pb-4 text-center`,
+    title: `font-semibold md:pb-4 text-center text-white`,
     list: `flex md:flex-col flex-row gap-5 mb-3`,
+    links:`hover:text-black hover:underline`
   };
   return (
-    <footer className="px-5 pb-4 pt-8">
+    <footer className="px-5 pb-4 pt-8 text-white bg-green-500">
       <div
         className="flex flex-col md:flex-row
                   pt-5 pb-2"
@@ -24,7 +25,7 @@ function Footer() {
             />
             <Link
               to=""
-              className="font-semibold text-black self-center
+              className="font-semibold  self-center
                                             text-base md:text-lg lg:text-xl font-Inter"
             >
               ecetary.com
@@ -32,16 +33,16 @@ function Footer() {
           </div>
           <div
             className="text-center justify-items-center font-Inter py-3 px-4
-                                    text-black text-sm 
+                                  text-sm 
                                     md:text-base 
                                     lg:text-lg "
           >
             Savor the artistry where every dish is a culinary masterpiece
           </div>
           <div className="flex justify-center gap-2 pb-4">
-            <SlSocialFacebook className="text-xl hover:scale-125 hover:text-green-300 cursor-pointer" />
-            <SlSocialInstagram className="text-xl hover:scale-125 hover:text-green-300 cursor-pointer" />
-            <SlSocialTwitter className="text-xl hover:scale-125 hover:text-green-300 cursor-pointer ml-1" />
+            <SlSocialFacebook className="text-xl hover:scale-125 hover:text-black cursor-pointer" />
+            <SlSocialInstagram className="text-xl hover:scale-125 hover:text-black cursor-pointer" />
+            <SlSocialTwitter className="text-xl hover:scale-125 hover:text-black cursor-pointer ml-1" />
           </div>
         </div>
         <div
@@ -53,13 +54,13 @@ function Footer() {
             <p className={styles.title}>Useful links</p>
             <ul className={styles.list}>
               <Link to="/categories">
-                <li className="hover:text-green-300">Categories</li>
+                <li className={styles.links}>Categories</li>
               </Link>
               <Link to="/all-recipes">
-                <li className="hover:text-green-300">Recipes</li>
+                <li className={styles.links}>Recipes</li>
               </Link>
               <Link to="/about-us">
-                <li className="hover:text-green-300">About Us</li>
+                <li className={styles.links}>About Us</li>
               </Link>
             </ul>
           </div>
@@ -67,13 +68,13 @@ function Footer() {
             <p className={styles.title}>Main Menu</p>
             <ul className={styles.list}>
               <Link href="/">
-                <li className="hover:text-green-300">Home</li>
+                <li className={styles.links}>Home</li>
               </Link>
               <Link to="/">
-                <li className="hover:text-green-300">Offers</li>
+                <li className={styles.links}>Offers</li>
               </Link>
               <Link to="/">
-                <li className="hover:text-green-300">Menus</li>
+                <li className={styles.links}>Menus</li>
               </Link>
             </ul>
           </div>

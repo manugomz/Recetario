@@ -20,6 +20,7 @@ export default function Favorites() {
       </h1>
       <div className="flex flex-wrap justify-center">
         {Object.keys(favorites).map((key) => {
+          console.log(typeof key)
           return <RecipeBox key={favorites[key].idMeal} recipe={favorites[key]} />;
         })}
       </div>

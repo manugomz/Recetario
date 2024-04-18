@@ -14,7 +14,7 @@ function AllRecipes() {
 
 
   return (
-    <section className="flex flex-col shadow-xl pb-4">
+    <section className="flex flex-col pb-4">
       <h2
         className="font-Inter font-bold 
                   text-red-500 text-center text-xs
